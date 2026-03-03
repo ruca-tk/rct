@@ -569,7 +569,7 @@ body {
     font-size: var(--text-6xl);
     font-variation-settings: "wght" 300;
     @media (max-width: 768px) {
-      font-size: var(--text-2xl);
+      font-size: var(--text-3xl);
     }
   }
 
@@ -588,7 +588,7 @@ body {
     text-align: left;
     margin-bottom: var(--space-lg);
     @media (max-width: 768px) {
-      font-size: var(--text-xl);
+      font-size: var(--text-2xl);
     }
   }
  
