@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="googlebot" content="noindex, nofollow, noarchive">
+<meta name="bingbot" content="noindex, nofollow, noarchive">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.17/dist/lenis.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Rc.T Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.168.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.168.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <div class="c-nav mx-auto md:max-w-5xl w-full w-full px-6">
+    <nav class="flex items-center justify-between">
+      <a class="c-brand" href="index.html">Rc.</a>
+      <ul class="hidden md:flex gap-8">
+        <li><a href="#works">Works</a></li>
+        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+  
+    <button id="hamburger" aria-label="Open navigation" class="md:hidden flex flex-col justify-center w-8 h-8 relative z-50">
+      <span class="block w-8 bg-[var(--bg)] rounded-sm mb-2 transition-transform duration-300"></span>
+      <span class="block w-8 bg-[var(--bg)] rounded-sm mb-2 transition-all duration-300"></span>
+      <span class="block w-8 bg-[var(--bg)] rounded-sm transition-transform duration-300"></span>
+    </button>
+   
+    <nav id="mobileNav" class="mobile-nav">
+      <ul>
+        <li><a href="#works" onclick="toggleNav()">Works</a></li>
+        <li><a href="#expertise" onclick="toggleNav()">Expertise</a></li>
+        <li><a href="#about" onclick="toggleNav()">About</a></li>
+        <li><a href="#contact" onclick="toggleNav()">Contact</a></li>
+      </ul>
+    </nav>
+  
+    </nav>
+  </div>
+ 
+<!-- KV -->
+<div class="c-kv">
+    <div id="canvas-container">
+      <div class="loading-overlay" id="loading">
+        <div class="loader"></div>
+        <div class="loading-text">Loading model…</div>
+      </div>
+     
+    </div>
+    <div class="c-kv__content">
+      <h1>built curious</h1>
+      <p>UI Engineer & Frontend Developer
+        <span>- My Portfolio  -</span>
+      </p>
+  
+    </div>
+  </div>
+
+  <!--works-->
+  <section class="c-section" id="works"> 
+  <div class="container mx-auto max-w-6xl px-6">
+   <div class="c-title">
+      <h2>Works</h2>
+      <p >Latest Projects</p>
+      </div>
+<!-- New Context Festival 2026 -->
+    <div class="c-works">
+      <div class="c-works__item flex items-start md:items-center justify-between  mb-4 md:mb-8">
+        <div class="c-works__item__content">
+          <h3>New Context Festival 2026</h3>
+       <ul class="c-tags">
+        <li>UI Engineer</li>
+        <li>Frontend Developer</li>
+        </ul>
+        </div>
+        <a href="works/ncf/"  class="c-works__item__link">
+          <img class="img-fluid h-5 aspect-square w-auto" src="images/arrow.svg" alt="">
+        </a>
+
+        </div>
+        <div class="c-works__item__image">
+          <img class="img-fluid" src="images/ncf_01.webp" alt="New Context Festival 2026">
+        </div>
+       
+    </div>
+
+<!-- New Context Conference Archive -->
+      <div class="c-works">
+        <div class="c-works__item flex items-start md:items-center justify-between  mb-4 md:mb-8">
+          <div class="c-works__item__content">
+            <h3>New Context Conference Archive</h3>
+         <ul class="c-tags">
+          <li>UX Architecture</li>
+          <li>UI System</li>
+          <li>Motion Design</li>
+          <li>CMS Architecture (WordPress)</li>
+          </ul>
+          </div>
+          <a href="/works/ncc/"  class="c-works__item__link">
+            <img class="img-fluid h-5 aspect-square w-auto" src="images/arrow.svg" alt="">
+          </a>
+  
+          </div>
+          <div class="c-works__item__image">
+            <img class="img-fluid" src="images/archive_01.webp" alt="New Context Conference">
+          </div>
+         
+      </div> 
+
+      <!-- New Context Conference Summer 2025 -->
+      <div class="c-works">
+        <div class="c-works__item flex items-start md:items-center justify-between  mb-4 md:mb-8">
+          <div class="c-works__item__content">
+            <h3>NCC Summer 2025</h3>
+         <ul class="c-tags">
+          <li>UI Design</li>
+          <li>Frontend Development</li>
+          <li>Motion Design</li>
+       
+          </ul>
+          </div>
+          <a href="/works/nccsummer/"  class="c-works__item__link">
+            <img class="img-fluid h-5 aspect-square w-auto" src="images/arrow.svg" alt="">
+          </a>
+  
+          </div>
+          <div class="c-works__item__image">
+            <img class="img-fluid" src="images/nccsummer_01.webp" alt="New Context Conference Summer 2025">
+          </div>
+         
+      </div> 
+
+      <!-- DG Camp Akiya -->
+      <div class="c-works">
+        <div class="c-works__item flex items-start md:items-center justify-between  mb-4 md:mb-8">
+          <div class="c-works__item__content">
+            <h3>DG Camp Akiya</h3>
+         <ul class="c-tags">
+          <li>Creative Direction</li>
+          <li>UI/UX Design</li>
+          <li>Front-End Development</li>
+          <li>Motion Design</li>
+       
+          </ul>
+          </div>
+          <a href="/works/dgakiya/"  class="c-works__item__link">
+            <img class="img-fluid h-5 aspect-square w-auto" src="images/arrow.svg" alt="">
+          </a>
+  
+          </div>
+          <div class="c-works__item__image">
+            <img class="img-fluid" src="images/akiya_01.webp" alt="DG Camp Akiya">
+          </div>
+         
+      </div> 
+<!-- Hashiri -->
+      <div class="c-works">
+        <div class="c-works__item flex items-start md:items-center justify-between  mb-4 md:mb-8">
+          <div class="c-works__item__content">
+            <h3>Hashiri San Francisco</h3>
+         <ul class="c-tags">
+          <li>UI Design</li>
+          <li>Front-End Development</li>
+          <li>Motion Design</li>
+          </ul>
+          </div>
+          <a href="/works/hashirisf/"  class="c-works__item__link">
+            <img class="img-fluid h-5 aspect-square w-auto" src="images/arrow.svg" alt="">
+          </a>
+  
+          </div>
+          <div class="c-works__item__image">
+            <img class="img-fluid" src="images/hashiri_01.webp" alt="Hashiri San Francisco">
+          </div>
+         
+      </div> 
+
+      <!-- mahola-->
+      <div class="c-works">
+        <div class="c-works__item flex items-start md:items-center justify-between  mb-4 md:mb-8">
+          <div class="c-works__item__content">
+            <h3>mahola</h3>
+         <ul class="c-tags">
+          <li>UI Design</li>
+          <li>Front-End Development</li>
+          <li>Motion Design</li>
+          <li>Brand Implementation</li>
+          </ul>
+          </div>
+          <a href="/works/mahola/"  class="c-works__item__link">
+            <img class="img-fluid h-5 aspect-square w-auto" src="images/arrow.svg" alt="">
+          </a>
+  
+          </div>
+          <div class="c-works__item__image">
+            <img class="img-fluid" src="images/mahola_01.webp" alt="mahola">
+          </div>
+         
+      </div> 
+
+      <!-- mahola wallet-->
+      <div class="c-works">
+        <div class="c-works__item flex items-start md:items-center justify-between  mb-4 md:mb-8">
+          <div class="c-works__item__content">
+            <h3>mahola Wallet</h3>
+         <ul class="c-tags">
+          <li>Product Design</li>
+          <li>UI System</li>
+          <li>Feature Strategy</li>
+          <li>Web App Design</li>
+          </ul>
+          </div>
+          <a href="/works/wallet/"  class="c-works__item__link">
+            <img class="img-fluid h-5 aspect-square w-auto" src="images/arrow.svg" alt="">
+          </a>
+  
+          </div>
+          <div class="c-works__item__image">
+            <img class="img-fluid" src="images/works_mahola_wallet.webp" alt="mahola wallet">
+          </div>
+         
+      </div> 
+      
+   
+   
+      </div>
+
+    
+  </div>
+  </section>
+
+  <!--expertise-->
+  <section class="c-section" id="expertise">
+    <div class="container mx-auto max-w-6xl px-6">
+      <div class="c-title">
+        <h2>Expertise</h2>
+        <p>What I dabble in</p>
+      </div>
+      <div class="c-cards">
+        <div class="c-card">
+          <p>I</p>
+          <div class="c-card__content">
+          <h4>UI Architecture</h4>
+          <ul>
+            <li>Design systems & scalable components</li>
+            <li>Information architecture</li>
+            <li>Bilingual CMS structuring</li>
+            <li>Consistency at scale</li>
+          </ul>
+          </div>
+        </div>
+
+      
+
+        <div class="c-card">
+          <p>II</p>
+          <div class="c-card__content">
+          <h4>Frontend Engineering</h4>
+          <ul>
+            <li>Performance optimization</li>
+            <li>Motion systems (GSAP / ScrollTrigger)</li>
+            <li>Custom WordPress themes</li>
+            <li>Vite workflows, clean JS</li>
+          </ul>
+          </div>
+        </div>
+
+        <div class="c-card">
+          <p>III</p>
+          <div class="c-card__content">
+          <h4>Cross-Functional Execution</h4>
+          <ul>
+            <li>Bridge design ↔ engineering</li>
+            <li>JP/EN stakeholder alignment</li>
+            <li>Creative direction &amp; delivery</li>
+            <li>Vendor coordination</li>
+          </ul>
+          </div>
+        </div>
+
+
+      </div>
+   
+    </div>
+  </section>
+
+  <!-- about-->
+  <section id="about" class="c-section">
+    <div class="container mx-auto max-w-6xl px-6">
+      <div class="c-title">
+        <h2>About</h2>
+        <p>what I do</p>
+      </div>
+    </div>
+    <div class="container mx-auto max-w-6xl md:max-w-4xl px-6">
+      <div class="c-about">
+      <div class="c-about__content text-center">
+      
+        <p class=" mb-8">
+          I design and build for the web.<br/>
+          Sometimes that means shaping a brand.<br/>
+          Sometimes it means writing the code that brings it to life.
+          
+          </p>
+          
+          <p>
+            I’m interested in the space where ideas meet implementation.<br>
+            Visuals are not decoration.<br>
+            Engineering is not an afterthought.
+          </p>
+      </div>
+    </div> 
+  </section>
+ <!-- contact-->
+ <section class="c-section" id="contact">
+  <div class="container mx-auto max-w-6xl px-6">
+  
+   <p class="text-center"> 
+    <a class="text-center c-hello" href="mailto:ruca.contact@gmail.com">Say hello <span class="c-hello__icon">👋</span></a></p>
+  </div>
+ </section>
+
+ <!-- footer-->
+  <footer class="c-footer">
+  <section class="c-section__footer">
+<img class="img-fluid  w-auto" src="images/footer.webp" alt="Rc. Portfolio">
+  </section>
+  </footer>
+
+ <script type="module" src="apple.js"></script>
+ <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script> 
+ <script src="scripts.js"></script>
+
+</body>
+</html>

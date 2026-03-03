@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="googlebot" content="noindex, nofollow, noarchive">
+<meta name="bingbot" content="noindex, nofollow, noarchive">
+<link rel="icon" type="image/png" href="../../favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png" />
+<link rel="manifest" href="../../site.webmanifest" />
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.17/dist/lenis.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Rc Portfolio - New Context Conference</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.168.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.168.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <div class="c-nav mx-auto md:max-w-5xl w-full w-full px-6">
+    <nav class="flex items-center justify-between">
+      <a class="c-brand" href="index.html">Rc.</a>
+      <ul class="hidden md:flex gap-8">
+       
+        <li><a href="../../">Home</a></li>
+      </ul>
+  
+    <button id="hamburger" aria-label="Open navigation" class="md:hidden flex flex-col justify-center w-8 h-8 relative z-50">
+      <span class="block w-8 bg-[var(--bg)] rounded-sm mb-2 transition-transform duration-300"></span>
+      <span class="block w-8 bg-[var(--bg)] rounded-sm mb-2 transition-all duration-300"></span>
+      <span class="block w-8 bg-[var(--bg)] rounded-sm transition-transform duration-300"></span>
+    </button>
+   
+    <nav id="mobileNav" class="mobile-nav">
+      <ul>
+     
+        <li><a href="../../" onclick="toggleNav()">Home</a></li>
+      </ul>
+    </nav>
+  
+    </nav>
+  </div>
+ 
+
+
+
+  <!--Content-->
+  <section class="c-section"> 
+  <div class="container mx-auto max-w-6xl px-6">
+   <img class="img-fluid rounded-2xl" src="../../images/archive_01.webp" alt="New Context Conference Archive">
+    </div>
+    <div class="container mx-auto max-w-6xl px-6">
+      <div class="c-project">
+        <div class="c-project-title mb-10">
+          <h1>New Context Conference</h1>
+          <p class="c-project-role">UI/UX Design & WordPress Architecture</p>
+       
+           <p>New Context Conference, NCC is a conference organized by DG Garage. It is hosted in Tokyo and San Francisco annually. For this project, I led the UI/UX design and developed a custom WordPress system to support multi-year event publishing and structured content presentation.</p>
+      
+          </div>
+          <a href="https://ncc.garage.co.jp/" target="_blank" class="c-project__link flex gap-2 items-center">
+           View Site <img class="img-fluid h-5 aspect-square w-auto" src="../../images/arrow.svg" alt="">
+          </a>
+    
+          <div class="c-project-section">
+            <h2>Scope</h2>
+            <ul class="c-list">
+            	<li>Information architecture</li>
+              <li>UI design</li>
+              <li>Custom WordPress theme development</li>
+              <li>CMS structure (Custom Post Types & relational content)</li>
+              <li>Front-end implementation (HTML / CSS / JS)</li>
+              <li>Performance optimization</li>
+            </ul>
+          </div>
+
+<div class="c-project-section">
+  <h2>Challenges</h2>
+  <ul class="c-list">
+	<li>Structuring complex speaker and session data clearly</li>
+	<li>Preserving readability across content-dense pages</li>
+	<li>Supporting multiple editions without duplicating structure</li>
+	<li>Enabling internal teams to manage content independently</li>
+  </ul>
+</div>
+
+<div class="c-project-section">
+  <h2>Approach</h2>
+  <ul class="c-list">
+    <li>Designed a modular layout system for consistent presentation</li>
+    <li>Built structured Custom Post Types for speakers, sessions, and events</li>
+    <li>Developed reusable templates to reduce redundancy</li>
+    <li>Optimized performance and ensured cross-device stability</li>
+  </ul>
+</div>
+
+<div class="c-project-section">
+  <h2>Results</h2>
+  <p>The platform now supports multiple NCC editions within a single scalable structure.
+    Content can be updated and published internally without developer involvement.
+    Speaker and session information is presented clearly despite high content density.
+    The site maintains stable performance across devices, including mobile-heavy traffic.</p>
+</div>
+
+</div>
+
+<img class="img-fluid rounded-2xl" src="../../images/archive_02.webp" alt="New Context Conference Archive">
+<img class="img-fluid rounded-2xl md:mt-30 mt-10" src="../../images/archive_03.webp" alt="New Context Conference Archive">
+<img class="img-fluid rounded-2xl md:mt-30 mt-10" src="../../images/archive_04.webp" alt="New Context Conference Archive">
+    
+<div>
+
+<div class="flex justify-between mt-10 md:mt-30">
+       <a href="/works/nccsummer/" class="c-project__link -previous flex gap-2 items-center">
+        <img class="img-fluid h-5 aspect-square w-auto" src="../../images/arrow.svg" alt=""> Previous 
+          </a>
+          <a href="/works/ncf/" class="c-project__link flex gap-2 items-center">Next <img class="img-fluid h-5 aspect-square w-auto" src="../../images/arrow.svg" alt="">
+           </a>
+   </div>
+
+  </section>
+
+
+
+
+ <!-- footer-->
+  <footer class="c-footer">
+  <section class="c-section__footer">
+<img class="img-fluid  w-auto" src="../../images/footer.webp" alt="Rc. Portfolio">
+  </section>
+  </footer>
+
+
+ <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script> 
+ <script src="../../scripts.js"></script>
+
+</body>
+</html>
