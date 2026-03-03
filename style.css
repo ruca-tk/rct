@@ -102,6 +102,9 @@ body {
   min-height: 500px;
   cursor: grab;
   overflow: hidden;
+  @media (max-width: 768px) {
+   pointer-events: none;
+  }
 }
 
 #canvas-container:active {
@@ -151,28 +154,6 @@ body {
   to { transform: rotate(360deg); }
 }
 
-/* .content {
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 60px 24px 120px;
-  text-align: center;
-} */
-
-/* .content h1 {
-  font-size: clamp(2.4rem, 5vw, 3.6rem);
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  line-height: 1.1;
-  margin-bottom: 16px;
-} */
-
-/* .content p {
-  font-size: clamp(1rem, 2vw, 1.2rem);
-  color: var(--subtle);
-  line-height: 1.6;
-  max-width: 520px;
-  margin: 0 auto;
-} */
 
 
 
