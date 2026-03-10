@@ -462,14 +462,17 @@ body {
         font-size: clamp(50px, 10vw, 170px);
         font-variation-settings: "wght" 200;
         opacity: 0.8;
-        margin-top: var(--space-2xl);
+        
+ @media (min-width: 768px) {
+  margin-top: var(--space-2xl);
+ }
+
         .c-hello__icon  {
           transition: all 0.3s ease;
         }
       &:hover {
         .c-hello__icon {
           display: inline-block!important;
-         
           transform-origin: 70% 70%;
           animation: wave 1.2s ease-in-out;
         }
@@ -507,10 +510,21 @@ body {
   }
 
   .c-footer {
-
+width: 100vw;
+overflow: hidden;
     img {
-     transform: scale(1.05);
+      overflow: visible;
+      object-fit: cover;
+     height: 24vh;
+     width: auto;
+     display: block;
     }
+     @media (max-width: 768px) {
+      
+     transform: scale(1.05);
+     margin-bottom: var(--space-6xl);
+    }
+   
   }
 
   /* Projects */
