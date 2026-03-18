@@ -203,6 +203,7 @@ body {
   
    .c-kv__content {
     font-family: var(--font-primary);
+    padding: 0 var(--space-lg);
     z-index: 8;
     position: relative;
     -webkit-user-select: none; /* Safari */
@@ -667,6 +668,11 @@ ul.c-list {
 }
 
 .lang-switcher {
+  border-top: 1px solid var(--black);
+  padding-top: var(--space-md);
+ @media (min-width: 768px) {
+  border: none;
+  padding-top: 0;
   text-align: center;
   position: relative;
   aspect-ratio: 1/1;
@@ -694,5 +700,6 @@ ul.c-list {
       opacity: 1;
     }
   }
+}
 
 }
