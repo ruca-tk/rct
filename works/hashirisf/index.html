@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="../../style.css">
   <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.17/dist/lenis.css">
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <title>Rc Portfolio - New Context Festival 2026</title>
+  <title>Rc Portfolio - Hashiri San Francisco</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
@@ -33,99 +33,159 @@
     <nav class="flex items-center justify-between">
       <a class="c-brand" href="../../">Rc.</a>
       <ul class="hidden md:flex gap-8">
-       
-        <li><a href="../../">Home</a></li>
+
+        <li><a href="../../">ホーム</a></li>
+        <li class="lang-switcher"><a href="../../en/">EN</a></li>
       </ul>
-  
-    <button id="hamburger" aria-label="Open navigation" class="md:hidden flex flex-col justify-center w-8 h-8 relative z-50">
+
+    <button id="hamburger" aria-label="ナビゲーションを開く" class="md:hidden flex flex-col justify-center w-8 h-8 relative z-50">
       <span class="block w-8 bg-[var(--bg)] rounded-sm mb-2 transition-transform duration-300"></span>
       <span class="block w-8 bg-[var(--bg)] rounded-sm mb-2 transition-all duration-300"></span>
       <span class="block w-8 bg-[var(--bg)] rounded-sm transition-transform duration-300"></span>
     </button>
-   
+
     <nav id="mobileNav" class="mobile-nav">
       <ul>
-     
-        <li><a href="../../" onclick="toggleNav()">Home</a></li>
+
+        <li><a href="../../" onclick="toggleNav()">ホーム</a></li>
       </ul>
     </nav>
-  
+
     </nav>
   </div>
- 
+
 
 
 
   <!--Content-->
-  <section class="c-section"> 
+  <section class="c-section">
   <div class="container mx-auto max-w-6xl px-6">
-   <img class="img-fluid rounded-2xl" src="../../images/hashiri_01.webp" alt="New Context Festival 2026">
+   <img class="img-fluid rounded-2xl" src="../../images/hashiri_01.webp" alt="Hashiri San Francisco">
     </div>
     <div class="container mx-auto max-w-6xl px-6">
       <div class="c-project">
         <div class="c-project-title mb-10">
           <h1>Hashiri San Francisco</h1>
-          <p class="c-project-role mb-10">Web Design & Front-End Development</p>
-           <p>Hashiri SF is a restaurant website designed to reflect the brand's refined, contemporary identity. Excluding the logo, I led the visual direction, web design, imagery planning, and full front-end development, delivering a custom HTML experience.</p>
-      
+          <p class="c-project-role mb-10">サイトリニューアル — アートディレクション & フロントエンド開発</p>
+
+          <ul class="c-tags mb-5">
+            <li>サイトリニューアル</li>
+            <li>アートディレクション</li>
+            <li>フロントエンド開発</li>
+            <li>コンテンツストラテジー</li>
+          </ul>
+
+          <p>Hashiriは、サンフランシスコにあるミシュラン星付きのおまかせレストランで、Digital GarageのCEOが所有しています。既存サイトはスクロールジャックを使ったシングルページ——テキスト過多で写真が少なく、顧客の予約判断よりもオーナーの個人的な関心に沿ったコンテンツが含まれていました。クリエイティブの完全な自由を与えられリニューアルに臨みました。</p>
+
           </div>
-          <a href="https://hashirisf.com//" target="_blank" class="c-project__link flex gap-2 items-center">
-           View Site <img class="img-fluid h-5 aspect-square w-auto" src="../../images/arrow.svg" alt="">
+          <a href="https://hashirisf.com/" target="_blank" class="c-project__link flex gap-2 items-center">
+           サイトを見る <img class="img-fluid h-5 aspect-square w-auto" src="../../images/arrow.svg" alt="">
           </a>
-    
 
-<div class="c-project-section">
-  <h2>Scope</h2>
-  <ul class="c-list">
-    <li>UI/UX design</li>
-    <li>Visual direction</li>
-    <li>Image planning and photo requests</li>
-    <li>Front-end architecture (HTML / CSS / JavaScript)</li>
-    <li>Animation design and implementation</li>
-    <li>Responsive development</li>
-    <li>Performance optimization</li>
-  </ul>
-</div>
-<div class="c-project-section">
-  <h2>Challenges</h2>
-  <ul class="c-list">
-    <li>Translating a high-end dining experience into a digital format</li>
-    <li>Curating imagery to support atmosphere and brand tone</li>
-    <li>Creating subtle motion without distracting from content</li>
-    <li>Maintaining performance without CMS support</li>
-  </ul>
-</div>
+          <!-- 01 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>01</span>
+              <h2>背景</h2>
+            </div>
+            <div class="c-project-body">
+              <p>Hashiriは、サンフランシスコにあるミシュラン星付きのおまかせレストランで、Digital GarageのCEOが所有しています。既存サイトはスクロールジャックを使った一枚長いページ構成——テキストが多く、写真は少なく、顧客の予約判断よりもオーナーの個人的な関心に沿ったコンテンツが含まれていました。依頼はリニューアル：モダンに、クリーンに、ミシュラン星付きの体験にふさわしいものにしてほしいというもの。8年間の継続した実績をもとに、クリエイティブの完全な自由が与えられました。</p>
+            </div>
+          </div>
 
-<div class="c-project-section">
-  <h2>Approach</h2>
-  <ul class="c-list">
-    <li>Defined layout and typographic hierarchy aligned with the restaurant’s positioning</li>
-    <li>Directed image selection and composition to ensure visual consistency</li>
-    <li>Built a fully custom HTML structure</li>
-    <li>Implemented restrained animation to enhance flow and pacing</li>
-    <li>Optimized assets to maintain fast load times</li>
-  
-  </ul>
-</div>
+          <!-- 02 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>02</span>
+              <h2>方向性</h2>
+            </div>
+            <div class="c-project-body">
+              <p>Hashiriという名前は、食材がその季節に初めて登場する瞬間——まだ旬に達していない、最も期待される時期を指しています。そこから明確なエディトリアルラインが生まれました：サイトは料理のように感じるべきだ。抑制的で、精緻で、皿の上のものに引っ張られるように。</p>
+              <p class="mt-5">カラーパレットは伝統的な日本の色から引いています——考え抜かれた、装飾的ではない深くミュートなトーン。フルスクリーンの写真がコンテンツを担います。他はすべて邪魔をしません。元の長いワンページを独立したページに分割し、コンセプトコピーを5つのカテゴリに再構成しました：About・Commitment・Eat・Drink・Feel。各セクションに一つの役割を与えました。</p>
+            </div>
+          </div>
 
-<div class="c-project-section">
-  <h2>Results</h2>
-  <p>The site communicates a clear and cohesive brand presence. Imagery and layout work together to reflect the restaurant's atmosphere. The implementation remains lightweight and performant across devices. The custom structure allows precise control over presentation and interaction.</p>
-</div>
+          <!-- 03 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>03</span>
+              <h2>主な判断</h2>
+            </div>
+            <div class="c-project-body">
+              <p>ビジュアルリフレッシュを超えて、リニューアルを定義した4つの判断があります。</p>
+
+              <p class="mb-10 mt-5"><span class="text-lg c-label">01. ボトムナビゲーション</span>
+              多くのレストランサイトはナビゲーションをトップに配置します。私はボトムに移動し、スクロールアウェアにしました——下スクロール時に消え、上スクロール時に再表示されます。理由はシンプルです：写真こそがプロダクト。フルスクリーンの食事画像の上部に固定バーがあると、サイトが売ろうとしているものと競合します。ボトムナビはビジュアル体験を遮らずに道案内を提供します。</p>
+
+              <p class="mb-10"><span class="text-lg c-label">02. アートコンテンツの削除</span>
+              既存サイトにはレストランに展示されているアートワークの説明がありました。CEOはコレクターであり、個人的な関心が反映されていました。それを削除しました。おまかせディナーに数万円を払うかどうか判断している顧客が求めているのは一つだけ——料理と体験がそれに値するという確信。アートコレクションの説明はその問いに答えません。削除することで、答えられるコンテンツのためのスペースが生まれました。</p>
+
+              <p class="mb-10"><span class="text-lg c-label">03. Instagramの埋め込み</span>
+              ミシュラン星付きレストランはビジュアルの評判で生きています。Instagramフィードをサイトに取り込むことで、誰かが手動で更新しなくても最新の料理写真が掲載され続けます。リデザインの間もサイトに生命感を与え、今まさにメニューに何があるかの生きたウィンドウを顧客に提供します。</p>
+
+              <p><span class="text-lg c-label">04. アートディレクション</span>
+              旧サイトの写真は料理を過小評価していました。求めるトーンのリファレンスを見つけ——クローズアップ、ドラマティックなライティング、食材を主役にした構図——それを元に米国在住のフォトグラファーにリモートでブリーフィングしました。写真ブリーフはレイアウトより先に来ました。</p>
+            </div>
+          </div>
+
+          <!-- 04 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>04</span>
+              <h2>デザイン</h2>
+            </div>
+            <div class="c-project-body">
+              <p>ヒーローはロゴとフルスクリーンの画像スライダーで始まります——料理と競うテキストはありません。日本語のワードマークが静かに佇み、写真が仕事をします。伝統的な日本の色のトーンがタイポグラフィとUIディテール全体に流れています：温かみのあるオフホワイト、深いチャコール、ミュートなアースカラー。明るい色はなく、画像から注目を奪うものもありません。</p>
+              <p class="mt-5">ヒーローコピー「it all begins with the ingredients」は、レストランの名前への直接的なリファレンスです。Hashiriとは、ある食材の季節で最初の漁や初収穫の時期——食材が最も期待される瞬間を指す言葉です。このラインはその場所にふさわしいものです。</p>
+            </div>
+          </div>
+
+          <!-- 05 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>05</span>
+              <h2>開発</h2>
+            </div>
+            <div class="c-project-body">
+              <p>Vite、Tailwind CSS、GSAP、Lenis、バニラJSで構築。スクロールアウェアなボトムナビゲーションは、ウィンドウのスクロール方向を検知してGSAPのフェードで表示・非表示を切り替えます。InstagramフィードはElfsightで実装し、クライアント側のメンテナンスをクリーンに保っています。</p>
+            </div>
+          </div>
+
+          <!-- 06 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>06</span>
+              <h2>成果</h2>
+            </div>
+            <div class="c-project-body">
+              <p>サイトはライブ状態を維持し、3年連続でミシュラン認定を受けているレストランの主要なWeb窓口として機能しています。写真主導のアプローチと削ぎ落とされたコンテンツが、内側の体験の質にふさわしいプレゼンスを与えています。</p>
+            </div>
+          </div>
+
+          <!-- 07 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>07</span>
+              <h2>振り返り</h2>
+            </div>
+            <div class="c-project-body">
+              <p>メニューページをもっと充実させるべきでした。現在ページは存在するものの、コンテンツが薄い——このレベルのレストランにとって、メニューは大きなコンバージョンポイントです。予約を迷っている顧客にとって、各コースへの丁寧なこだわりを見ることは背中を押す材料になります。そのページにはもっと時間をかけるべきでした。</p>
+            </div>
+          </div>
 
 </div>
 
 <img class="img-fluid rounded-2xl" src="../../images/hashiri_02.webp" alt="Hashiri San Francisco">
 <img class="img-fluid rounded-2xl md:mt-30 mt-10" src="../../images/hashiri_03.webp" alt="Hashiri San Francisco">
 
-    
+
 <div>
 
 <div class="flex justify-between mt-10 md:mt-30">
        <a href="/rct/works/mahola/" class="c-project__link -previous flex gap-2 items-center">
-        <img class="img-fluid h-5 aspect-square w-auto" src="../../images/arrow.svg" alt=""> Previous 
+        <img class="img-fluid h-5 aspect-square w-auto" src="../../images/arrow.svg" alt=""> 前へ
           </a>
-          <a href="/rct/works/dgi/" class="c-project__link flex gap-2 items-center">Next <img class="img-fluid h-5 aspect-square w-auto" src="../../images/arrow.svg" alt="">
+          <a href="/rct/works/dgi/" class="c-project__link flex gap-2 items-center">次へ <img class="img-fluid h-5 aspect-square w-auto" src="../../images/arrow.svg" alt="">
            </a>
    </div>
 
@@ -142,7 +202,7 @@
   </footer>
 
 
- <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script> 
+ <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script>
  <script src="../../scripts.js"></script>
 
 </body>

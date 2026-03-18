@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="googlebot" content="noindex, nofollow, noarchive">
+<meta name="bingbot" content="noindex, nofollow, noarchive">
+<link rel="icon" type="image/png" href="../../../favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="../../../favicon.svg" />
+<link rel="shortcut icon" href="../../../favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="../../../apple-touch-icon.png" />
+<link rel="manifest" href="../../../site.webmanifest" />
+  <link rel="stylesheet" href="../../../style.css">
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.17/dist/lenis.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Rc Portfolio - mahola</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.168.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.168.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <div class="c-nav mx-auto md:max-w-5xl w-full w-full px-6">
+    <nav class="flex items-center justify-between">
+      <a class="c-brand" href="/rct/en/">Rc.</a>
+      <ul class="hidden md:flex gap-8">
+       
+        <li><a href="/rct/en/">Home</a></li>
+         <li class="lang-switcher"><a href="/rct/">JA</a></li>
+      </ul>
+  
+    <button id="hamburger" aria-label="Open navigation" class="md:hidden flex flex-col justify-center w-8 h-8 relative z-50">
+      <span class="block w-8 bg-[var(--bg)] rounded-sm mb-2 transition-transform duration-300"></span>
+      <span class="block w-8 bg-[var(--bg)] rounded-sm mb-2 transition-all duration-300"></span>
+      <span class="block w-8 bg-[var(--bg)] rounded-sm transition-transform duration-300"></span>
+    </button>
+   
+    <nav id="mobileNav" class="mobile-nav">
+      <ul>
+     
+        <li><a href="/rct/en/" onclick="toggleNav()">Home</a></li>
+      </ul>
+    </nav>
+  
+    </nav>
+  </div>
+ 
+
+
+
+  <!--Content-->
+  <section class="c-section"> 
+  <div class="container mx-auto max-w-6xl px-6">
+   <img class="img-fluid rounded-2xl" src="../../../images/mahola_01.webp" alt="mahola">
+    </div>
+    <div class="container mx-auto max-w-6xl px-6">
+      <div class="c-project">
+        <div class="c-project-title mb-10">
+          <h1>mahola</h1>
+          <p class="c-project-role mb-10">Web Brand Direction & Frontend Development</p>
+
+          <ul class="c-tags mb-5">
+            <li>Web Brand Direction</li>
+            <li>Web3</li>
+            <li>Front-End Dev</li>
+            <li>Motion / Animation</li>
+          </ul>
+
+          <p>mahola is a Web3 API platform developed by Crypto Garage, a Digital Garage subsidiary. The brief came from a whiteboard session — no formal spec, no copywriter, no content strategy. I led the visual direction, content architecture, and full frontend development, turning a logo and a mascot into a brand site that serves two distinct audiences: business decision makers and developers.</p>
+
+          </div>
+          <a href="https://www.mahola.xyz/" target="_blank" class="c-project__link flex gap-2 items-center">
+           View Site <img class="img-fluid h-5 aspect-square w-auto" src="../../../images/arrow.svg" alt="">
+          </a>
+
+          <!-- 01 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>01</span>
+              <h2>Context</h2>
+            </div>
+            <div class="c-project-body">
+              <p>mahola is a Web3 API platform developed by Crypto Garage, a Digital Garage subsidiary. The project began with a whiteboard session: a tagline, some introductory text, a partners section, three use cases, and a contact form. No brief document, no spec, no copywriter. The assets I was given were a logo, a colour palette, brand guidelines, and a mascot — an orange bear the team was already attached to. My job was to take those assets and build a web presence that could explain a complex technical product to two very different audiences: business decision makers and developers.</p>
+            </div>
+          </div>
+
+          <!-- 02 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>02</span>
+              <h2>Direction</h2>
+            </div>
+            <div class="c-project-body">
+              <p>The brand had strong ingredients but no web visual language. I built one from what the assets implied. Deep purple became the dominant background, giving the bear and brand colours room to breathe. Cream handled the lighter, more informational sections. Black provided transition moments between zones. Three distinct visual temperatures, one coherent identity.</p>
+              <p class="mt-5">The bear wasn't an ornament — he was the brand's emotional anchor and already popular within the company. I designed him into the site structurally: peeking up from the hero, appearing as a star-eyed circular badge after the marquee transition, embedded in the use case illustrations. His presence at every scroll depth wasn't accidental.</p>
+            </div>
+          </div>
+
+          <!-- 03 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>03</span>
+              <h2>Key Decisions</h2>
+            </div>
+            <div class="c-project-body">
+              <p>The whiteboard gave me a marketing site. Four decisions pushed the scope into something more considered.</p>
+
+              <p class="mb-10 mt-5"><span class="text-lg c-label">01. Content Structure</span>
+              The introductory text arrived as a single dense block. I asked the team to identify three core points about mahola and expand on each separately. Same information, but now readable and scannable for an audience with a low tolerance for walls of text.</p>
+
+              <p class="mb-10"><span class="text-lg c-label">02. Demo Request</span>
+              The original conversion point was a contact form. I added a demo request modal with a document selector — a more qualified entry point for business leads who wanted to evaluate the product before committing to direct contact.</p>
+
+              <p class="mb-10"><span class="text-lg c-label">03. Developer Audience</span>
+              Going through internal documents and manuals, I found a presentation the team had built for a separate event. It contained technical detail that wasn't in the planned site. I recognised that developers were a second audience the whiteboard had missed entirely — someone evaluating an API has different needs than a business decision maker — and surfaced that material as a dedicated section with an API features list.</p>
+
+              <p><span class="text-lg c-label">04. Pricing</span>
+              Pricing wasn't in the brief. I pushed for it. A B2B SaaS site without pricing raises friction for decision makers assessing budget fit before engaging. The team had difficulties settling on tiers, but they came through. Three tiers, clearly structured.</p>
+            </div>
+          </div>
+
+          <!-- 04 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>04</span>
+              <h2>Design</h2>
+            </div>
+            <div class="c-project-body">
+              <p>The visual system runs across three zones and the mascot stitches them together. The hero leads with confidence: large bold typography, the bear peeking from the bottom edge, two CTAs with clear hierarchy. The transition to the black marquee band uses star emojis as a visual beat — the bear's eyes go star-shaped when he's excited — before the cream sections open into something warmer and more approachable.</p>
+              <p class="mt-5">The use case section keeps the brand character present even in the most functional part of the site, with illustrated icons embedding the bear in each one. Each zone has a distinct visual weight, but nothing feels disconnected. The system is more intentional than it looks on a first scroll.</p>
+            </div>
+          </div>
+
+          <!-- 05 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>05</span>
+              <h2>Code</h2>
+            </div>
+            <div class="c-project-body">
+              <p>The site is custom HTML, CSS, and JavaScript — no framework, no template. Working directly in the browser gave precise control over timing and layout behaviour that a framework would have abstracted away.</p>
+              <p class="mt-5">The two animations that carry the most brand weight are the cursor-following bear eyes and the star-eyed marquee. The cursor interaction lives in the developer CTA section — the most technical part of the site — and keeps the playful identity alive where it would otherwise be lost. It's the kind of interaction that's hard to describe in a case study but immediately memorable when you use it. All scroll-triggered animations share a consistent timing vocabulary so the site feels controlled rather than busy. Responsive behaviour was built from the start, not retrofitted.</p>
+            </div>
+          </div>
+
+          <!-- 06 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>06</span>
+              <h2>Outcome</h2>
+            </div>
+            <div class="c-project-body">
+              <p>The site is live at mahola.xyz and actively driving enquiries. It serves two distinct audiences within a single coherent experience. The pricing section, the developer resource section, and the demo request modal all exist because I pushed for them. None were in the whiteboard.</p>
+            </div>
+          </div>
+
+          <!-- 07 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>07</span>
+              <h2>Reflection</h2>
+            </div>
+            <div class="c-project-body">
+              <p>I identified the developer audience mid-project, while going through internal documents. It worked out, but it was reactive rather than planned. A more structured discovery pass at the start — even just asking "who else might visit this site and what would they need?" — would have surfaced that audience earlier and given the developer section more room to develop.</p>
+              <p class="mt-5">The same applies to pricing. I raised it late in the process. If I'd asked about commercial structure in the first conversation after the whiteboard, the team would have had more time to settle on the tier structure. Getting that clarity early is worth the awkward conversation.</p>
+            </div>
+          </div>
+
+</div>
+
+<img class="img-fluid rounded-2xl" src="../../../images/mahola_02.webp" alt="mahola">
+<img class="img-fluid rounded-2xl md:mt-30 mt-10" src="../../../images/mahola_03.webp" alt="mahola">
+<img class="img-fluid rounded-2xl md:mt-30 mt-10" src="../../../images/mahola_04.webp" alt="mahola">
+    
+<div>
+
+<div class="flex justify-between mt-10 md:mt-30">
+       <a href="/rct/works/wallet/" class="c-project__link -previous flex gap-2 items-center">
+        <img class="img-fluid h-5 aspect-square w-auto" src="../../../images/arrow.svg" alt=""> Previous 
+          </a>
+          <a href="/rct/works/hashirisf/" class="c-project__link flex gap-2 items-center">Next <img class="img-fluid h-5 aspect-square w-auto" src="../../../images/arrow.svg" alt="">
+           </a>
+   </div>
+
+  </section>
+
+
+
+
+ <!-- footer-->
+  <footer class="c-footer">
+  <section class="c-section__footer">
+<img class="img-fluid  w-auto" src="../../../images/footer.webp" alt="Rc. Portfolio">
+  </section>
+  </footer>
+
+
+ <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script> 
+ <script src="../../../scripts.js"></script>
+
+</body>
+</html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -33,31 +33,32 @@
     <nav class="flex items-center justify-between">
       <a class="c-brand" href="../../">Rc.</a>
       <ul class="hidden md:flex gap-8">
-       
-        <li><a href="../../">Home</a></li>
+
+        <li><a href="../../">ホーム</a></li>
+        <li class="lang-switcher"><a href="../../en/">EN</a></li>
       </ul>
-  
-    <button id="hamburger" aria-label="Open navigation" class="md:hidden flex flex-col justify-center w-8 h-8 relative z-50">
+
+    <button id="hamburger" aria-label="ナビゲーションを開く" class="md:hidden flex flex-col justify-center w-8 h-8 relative z-50">
       <span class="block w-8 bg-[var(--bg)] rounded-sm mb-2 transition-transform duration-300"></span>
       <span class="block w-8 bg-[var(--bg)] rounded-sm mb-2 transition-all duration-300"></span>
       <span class="block w-8 bg-[var(--bg)] rounded-sm transition-transform duration-300"></span>
     </button>
-   
+
     <nav id="mobileNav" class="mobile-nav">
       <ul>
-     
-        <li><a href="../../" onclick="toggleNav()">Home</a></li>
+
+        <li><a href="../../" onclick="toggleNav()">ホーム</a></li>
       </ul>
     </nav>
-  
+
     </nav>
   </div>
- 
+
 
 
 
   <!--Content-->
-  <section class="c-section"> 
+  <section class="c-section">
   <div class="container mx-auto max-w-6xl px-6">
    <img class="img-fluid rounded-2xl" src="../../images/dgi_01.webp" alt="DG Incubation">
     </div>
@@ -65,67 +66,125 @@
       <div class="c-project">
         <div class="c-project-title mb-10">
           <h1>DG Incubation</h1>
-          <p class="c-project-role mb-10">Web Design, Front-End Development & WordPress Build</p>
-       
-           <p>DG Incubation is a corporate site introducing Digital Garage's incubation and startup support initiatives. Excluding the logo, I led the web design and delivered the full WordPress implementation, building a maintainable CMS-driven site with a polished, responsive front end.
-          </p>
-      
+          <p class="c-project-role mb-10">サイトリニューアル — UXアーキテクチャ & WordPress構築</p>
+
+          <ul class="c-tags mb-5">
+            <li>サイトリニューアル</li>
+            <li>UXアーキテクチャ</li>
+            <li>WordPress / ACF</li>
+            <li>バイリンガル</li>
+          </ul>
+
+          <p>DG Incubationは、Digital Garageのインキュベーション・ファンド管理部門です。既存サイトは日本語のみのシングルページで、CMSも英語版もなし。依頼はシンプルでした：リニューアルしてほしい。正式なブリーフなし、ミーティングと旧サイトの確認だけ。ゼロから作り直しました。</p>
+
           </div>
           <a href="https://dgincubation.com/" target="_blank" class="c-project__link flex gap-2 items-center">
-           View Site <img class="img-fluid h-5 aspect-square w-auto" src="../../images/arrow.svg" alt="">
+           サイトを見る <img class="img-fluid h-5 aspect-square w-auto" src="../../images/arrow.svg" alt="">
           </a>
-    
 
-          <div class="c-project-section">
-            <h2>Scope</h2>
-            <ul class="c-list">
-              <li>UI/UX design</li>
-              <li>Visual system and page layout</li>
-              <li>Custom WordPress theme development</li>
-              <li>CMS structure and page templates</li>
-              <li>Performance optimization</li>
-              
-            </ul>
+          <!-- 01 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>01</span>
+              <h2>背景</h2>
+            </div>
+            <div class="c-project-body">
+              <p>DG Incubationは、Digital Garageのインキュベーション・ファンド管理部門です。既存サイトは日本語のみのシングルランディングページ——紺色の背景にテキストが詰め込まれた、ファンド構造の図が中心の作り。CMSもなく、ナビゲーションもなく、英語版もありませんでした。依頼はリニューアル——正式なブリーフなし、チームに旧サイトを見せてもらい、新しくしてほしいと告げられるだけのミーティングから始まりました。</p>
+            </div>
           </div>
 
-<div class="c-project-section">
-  <h2>Challenges</h2>
-  <ul class="c-list"> 
-    <li>Communicating a multi-program offering with clear information hierarchy</li>
-    <li>Keeping the design modern while aligning with corporate tone</li>
-    <li>Building flexible templates for ongoing content updates</li>
-    <li>Maintaining performance and consistency across devices</li>
-  </ul>
-</div>
+          <!-- 02 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>02</span>
+              <h2>方向性</h2>
+            </div>
+            <div class="c-project-body">
+              <p>インキュベーション企業のウェブサイトには一つの仕事があります：起業家と投資家に信頼性を示すこと。クリーンなホワイトをベースに、コーポレートブルーをアクセントカラーとして採用しました——控えめで、プロフェッショナルで、長持ちするデザイン。暗い背景も重いグラデーションもなく、2年後に古くなる要素を一切排除しました。ビジュアルシステムは意図的に静かで、コンテンツが本来の仕事をできるようにしています。</p>
+              <p class="mt-5">ヒーローには、スタティックになりがちなコーポレートページにエネルギーを加えるため、ソーシングした動画を使用しています。他の要素はすべて邪魔をしません。</p>
+            </div>
+          </div>
 
-<div class="c-project-section">
-  <h2>Approach</h2>
-  <ul class="c-list">
-    <li>Structured the site around clear categories and scannable sections</li>
-    <li>Designed reusable components to maintain consistency across pages</li>
-    <li>Implemented a custom WordPress theme with modular templates</li>
-    <li>Optimized assets and layout behavior to reduce shifts and improve load speed</li>
-</div>
+          <!-- 03 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>03</span>
+              <h2>主な判断</h2>
+            </div>
+            <div class="c-project-body">
+              <p>旧サイトと必要なものとのギャップは大きく、4つの判断がリビルド全体を形づくりました。</p>
 
-<div class="c-project-section">
-  <h2>Results</h2>
-  <p>The site presents DG Incubation's offerings with a clear, structured narrative.
-    Content updates can be handled internally through the CMS without layout breakage.
-    The design system stays consistent across pages while allowing flexible publishing. The implementation remains stable and responsive across common devices and browsers.</p>
-</div>
+              <p class="mb-10 mt-5"><span class="text-lg c-label">01. LPからマルチページサイトへ</span>
+              旧サイトはAbout・ファンド構造・会社概要のすべてを1ページに詰め込み、セクション間のナビゲーションもありませんでした。ファンドを調べている起業家と、ポートフォリオを確認する投資家では、ニーズが違います。各ファンド・ポートフォリオ・ニュース・チーム・会社概要の専用ページに分割することで、すべてのオーディエンスに明確な経路を提供しました。</p>
 
-</div>  
+              <p class="mb-10"><span class="text-lg c-label">02. 最初からバイリンガルで</span>
+              旧サイトは日本語のみ。DG Incubationはグローバルなスタートアップへの投資と、国際的なパートナーとの協働を行っています。英語版は選択肢ではなく、むしろ遅すぎるほどでした。Polylangを使って構築し、JPとENの両言語が同じ構造を共有しながら、コードに触れることなく独立して管理できるようにしました。</p>
+
+              <p class="mb-10"><span class="text-lg c-label">03. ノンデザイナーのためのCMS</span>
+              チームがニュース・チームメンバー・ポートフォリオのエントリーを自分たちで更新できる必要がありました。ACFを使ったカスタムWordPressテーマを構築——各コンテンツエリアにカスタム投稿タイプと構造化フィールドグループを設けました。ニュース記事や新しいチームメンバーを追加するのにデザインの知識は不要です。開発者に頼ることなく、サイトを常に最新の状態に保てます。</p>
+
+              <p><span class="text-lg c-label">04. ポートフォリオページのリファレンス</span>
+              ブリーフではDG Venturesのポートフォリオデザインを参照するよう求められていました。フィルタリング可能なグリッド構造を踏襲し、各企業のエントリーに何をしているかを一行で説明するタグラインを追加しました。タグラインにより、訪問者がクリックしなくても関連性を判断できるようになりました。</p>
+            </div>
+          </div>
+
+          <!-- 04 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>04</span>
+              <h2>デザイン</h2>
+            </div>
+            <div class="c-project-body">
+              <p>ビジュアルシステムは意図的に静かです。ホワイトの背景、ブルーのアクセント、クリーンなサンセリフタイポグラフィ。コンテンツから注目を奪うものは何もありません。各ファンドページは同じシステムの中で独自のアイデンティティを持ち——一貫したレイアウトでありながら、それぞれが独立したプロダクトとして感じられるよう差別化されています。ホームページのビデオヒーローはギミックなしのモーション：サイレントで背景を流れ、ページに動きを与えながら、上のテキストと競合しません。</p>
+              <p class="mt-5">今日同様、5年後も適切に見えるサイトを目指しました。</p>
+            </div>
+          </div>
+
+          <!-- 05 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>05</span>
+              <h2>開発</h2>
+            </div>
+            <div class="c-project-body">
+              <p>ACFを使ったカスタムWordPressテーマ。ニュース・チーム・ポートフォリオの3つのカスタム投稿タイプ——各コンテンツエリアに構造化フィールドグループを設けることで、チームがコードに触れずにコンテンツを更新できます。Polylangを使って全体をバイリンガルに——JPとENが同じテンプレートを共有しながら、別々のコンテンツツリーを持ちます。フロントエンドは標準的なHTML、CSS、バニラJS——不要なフレームワークを使用しません。</p>
+            </div>
+          </div>
+
+          <!-- 06 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>06</span>
+              <h2>成果</h2>
+            </div>
+            <div class="c-project-body">
+              <p>日本語のみのシングルページ資料から、チームが自分たちで管理できるバイリンガルのマルチページWordPressサイトへ。ライブ状態を保ち、長期運用に耐えるように構築されています。コンテンツ構造はスケーラブルで、リデザインなしに新しいファンド・チームメンバー・ポートフォリオエントリーを追加できます。</p>
+            </div>
+          </div>
+
+          <!-- 07 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>07</span>
+              <h2>振り返り</h2>
+            </div>
+            <div class="c-project-body">
+              <p>旧サイトのファンド構造図は重要な情報を持っていました——異なる投資ステージを横断して各ファンドがどう関連するかを示していたのです。リデザインで視覚的に重いと感じて削除しましたが、代わりに何も追加しませんでした。振り返ってみれば、丸ごとカットするのではなく、その構造をよりクリーンに表現する方法を見つけるべきでした。残す価値のある複雑さがありました。</p>
+            </div>
+          </div>
+
+</div>
 
 <img class="img-fluid rounded-2xl" src="../../images/dgi_02.webp" alt="DG Incubation">
 <img class="img-fluid rounded-2xl md:mt-30 mt-10" src="../../images/dgi_03.webp" alt="DG Incubation">
-    
+
 <div>
 
 <div class="flex justify-between mt-10 md:mt-30">
        <a href="/rct/works/hashirisf/" class="c-project__link -previous flex gap-2 items-center">
-        <img class="img-fluid h-5 aspect-square w-auto" src="../../images/arrow.svg" alt=""> Previous 
+        <img class="img-fluid h-5 aspect-square w-auto" src="../../images/arrow.svg" alt=""> 前へ
           </a>
-          <a href="/rct/works/dgakiya/" class="c-project__link flex gap-2 items-center">Next <img class="img-fluid h-5 aspect-square w-auto" src="../../images/arrow.svg" alt="">
+          <a href="/rct/works/dgakiya/" class="c-project__link flex gap-2 items-center">次へ <img class="img-fluid h-5 aspect-square w-auto" src="../../images/arrow.svg" alt="">
            </a>
    </div>
 
@@ -142,7 +201,7 @@
   </footer>
 
 
- <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script> 
+ <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script>
  <script src="../../scripts.js"></script>
 
 </body>

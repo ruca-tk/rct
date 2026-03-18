@@ -105,7 +105,7 @@ dragQuaternion.setFromEuler(new THREE.Euler(0.8, 0, 0));
 const loader = new GLTFLoader();
 
 loader.load(
-  './apple.glb',           // Model URL (must be in same folder).
+  new URL('./apple.glb', import.meta.url).href,  // Resolve relative to this JS file, not the page.
   (gltf) => {              // On load success:
     const model = gltf.scene;
 

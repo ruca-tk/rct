@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="googlebot" content="noindex, nofollow, noarchive">
+  <meta name="bingbot" content="noindex, nofollow, noarchive">
+  <link rel="icon" type="image/png" href="../../../favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="../../../favicon.svg" />
+<link rel="shortcut icon" href="../../../favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="../../../apple-touch-icon.png" />
+<link rel="manifest" href="../../../site.webmanifest" />
+  <link rel="stylesheet" href="../../../style.css">
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.17/dist/lenis.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Rc Portfolio - mahola wallet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.168.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.168.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <div class="c-nav mx-auto md:max-w-5xl w-full w-full px-6">
+    <nav class="flex items-center justify-between">
+      <a class="c-brand" href="/rct/en/">Rc.</a>
+      <ul class="hidden md:flex gap-8">
+       
+        <li><a href="/rct/en/">Home</a></li>
+         <li class="lang-switcher"><a href="/rct/">JA</a></li>
+      </ul>
+  
+    <button id="hamburger" aria-label="Open navigation" class="md:hidden flex flex-col justify-center w-8 h-8 relative z-50">
+      <span class="block w-8 bg-[var(--bg)] rounded-sm mb-2 transition-transform duration-300"></span>
+      <span class="block w-8 bg-[var(--bg)] rounded-sm mb-2 transition-all duration-300"></span>
+      <span class="block w-8 bg-[var(--bg)] rounded-sm transition-transform duration-300"></span>
+    </button>
+   
+    <nav id="mobileNav" class="mobile-nav">
+      <ul>
+     
+        <li><a href="/rct/en/" onclick="toggleNav()">Home</a></li>
+      </ul>
+    </nav>
+  
+    </nav>
+  </div>
+ 
+
+
+
+  <!--Content-->
+  <section class="c-section"> 
+  <div class="container mx-auto max-w-6xl px-6">
+   <img class="img-fluid rounded-2xl" src="../../../images/wallet_01.webp" alt="mahola wallet">
+    </div>
+    <div class="container mx-auto max-w-6xl px-6">
+       <div class="c-project ">
+        <div class="c-project-title mb-10">
+          <h1>mahola wallet</h1>
+          <p class="c-project-role mb-10">Product Design</p>
+
+           <ul class="c-tags mb-5">
+        <li>Product Design</li>
+        <li>web3/NFT</li>
+        <li>Design System</li>
+        <li>Figma → Handoff</li>
+        </ul>
+       
+           <p>mahola wallet is an internal NFT collection application designed to manage and interact with digital assets. I led the product design from the ground up, defining the visual identity, user flows, feature set, and interaction system beyond the original brief.</p>
+      
+          </div>
+          <!-- 01 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>01</span>
+              <h2>Context</h2>
+            </div>
+            <div class="c-project-body">
+            <p>  Digital Garage was exploring NFT-based community tools to raise awareness of NFT within the company. The initial prototype had basic minting functionality but no coherent user experience — users couldn't manage their assets, reset passwords, or switch languages. Engagement was dropping off after first mint.</p>
+            </div>
+          </div>
+
+           <!-- 02 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>02</span>
+              <h2>Discovery</h2>
+            </div>
+            <div class="c-project-body">
+              <img class="img-fluid" src="../../../images/wallet_case_1.webp" alt="">
+            <p class="mt-5 mb-5">This was the starting point — an engineer-authored wireframe defining which screens existed, but leaving the actual UX open. Navigation model, action hierarchy, empty states, and error flows were all undefined. My job was to make those decisions.</p>
+
+             <img class="img-fluid" src="../../../images/wallet_case_2.webp" alt="">
+             <p class="mt-5 mb-5">The closest comparable product in the Japanese market had already sunset by the time mahola launched. Looking at its UI, the core problem was clear: it led with gamification (points, map) but buried the actual asset — the NFT itself. Users had no obvious path from 'I have a stamp' to 'I understand what this is worth or how to use it.' That shaped my decision to lead mahola's dashboard with the asset collection, not the points system.</p>
+
+            </div>
+          </div>
+
+           <!-- 03 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>03</span>
+              <h2>Key Decisions</h2>
+            </div>
+            <div class="c-project-body">
+             
+            <p class="mb-10"> <span class="text-lg c-label ">01. Columns</span>
+            The engineer's default was a 3-column grid, efficient use of space with more items visible at once. I pushed back. NFTs in this context aren't files to be managed, they're mementos. At 3-per-row the artwork becomes a thumbnail. At 2-per-row it becomes something you can actually look at. The layout needed to reflect how users feel about their collection, not how many items fit on screen.</p>
+
+        <p ><span class="text-lg c-label">02. Gammification</span>
+        The brief asked for a fun experience that reflected mahola's playful brand character. Rather than interpreting "fun" as visual style alone, I proposed a progression system built around the mascot. The bear already existed as a series of sticker assets. I connected them into a rank system tied to NFT accumulation: Newbie, Novice, Pro, and Wizard, each reflected through the bear's visual state. The Wizard gets star-shaped eyes. The gamification wasn't added on top of the brand, it was expressed through it. As a bonus, the rank structure laid the groundwork for future tier-based benefits without requiring a redesign.</p>
+          <img class="img-fluid mt-5 mb-10" src="../../../images/wallet_case_3.webp" alt="">
+
+            <p><span class="text-lg c-label">03. Favourites</span> 
+           The favourite tag wasn't in the brief. I added it because I'm a collector myself. With a growing collection, finding the items that matter most shouldn't require scrolling through everything. Some NFTs are trophies, others are utilities, and you want fast access to the ones that matter.</p>
+                
+            </div>
+          </div>
+
+            <!-- 04 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>04</span>
+              <h2>Design</h2>
+            </div>
+            <div class="c-project-body">
+           
+            <p class="mt-5 mb-5">The visual direction was driven by the NFT artwork itself. The pieces are vivid, colourful and detailed — a light UI would have competed with them. Dark mode let the artwork lead, with neon yellow as the single accent colour to carry mahola's energetic brand character through the interface.</p>
+               <img class="img-fluid" src="../../../images/wallet_01.webp" alt="">
+
+           
+            <p class="mt-5 mb-5">Three tabs, one job each. Home surfaces your collection activity at a glance, Collection puts your NFTs front and centre, Account handles everything else. The 2-column grid gives each piece room to exist as artwork rather than a data point.</p>
+              <img class="img-fluid" src="../../../images/wallet_04.webp" alt="">
+
+           
+            <p class="mt-5 mb-5">The rank progression system appears as a modal on first login and on rank change. The bear is the message — no lengthy explanation needed. Users immediately understand they've levelled up.</p>
+            <img class="img-fluid" src="../../../images/wallet_03.webp" alt="">
+          
+            <p class="mt-5 mb-5">The original wireframe defined three screens. The final product covers the full surface area — empty states, error flows, password reset, account deletion, language switching, and verification. The empty collection state uses the confused bear rather than a generic placeholder, keeping the brand voice consistent even when there's nothing to show yet.</p>
+                <img class="img-fluid" src="../../../images/wallet_02.webp" alt="">
+
+            </div>
+          </div>
+
+           <!-- 05 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>05</span>
+              <h2>Code</h2>
+            </div>
+            <div class="c-project-body">
+               
+            <p >I set up the Figma file the way I'd want to receive one as an engineer. Spacing and typography follow Tailwind's scale, so design tokens translate directly to code without any guesswork. Every component has its states defined — default, active, error, disabled. Button transitions and the splash animation are documented in the component library itself, not buried in a comment or left for a handoff call. The goal was to make the gap between the Figma file and the build as small as possible.</p>
+             <img class="img-fluid mt-5 mb-5" src="../../../images/wallet_case_5.webp" alt="">
+                <img class="img-fluid" src="../../../images/wallet_case_4.webp" alt="">
+
+            </div>
+          </div>
+
+           <!-- 06 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>06</span>
+              <h2>Outcome</h2>
+            </div>
+            <div class="c-project-body">
+               
+            <p>The app is actively used by around 320 people within the company. The café runs a monthly NFT campaign through the platform, which has become a regular part of how the brand engages its community. The product went from an unfinished prototype with no coherent user experience to something people open every month. That was the goal.</p>
+             <img class="img-fluid mt-5 mb-5" src="../../../images/wallet_case_5.webp" alt="">
+              
+
+            </div>
+          </div>
+
+            <!-- 07 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>07</span>
+              <h2>Reflection</h2>
+            </div>
+            <div class="c-project-body">
+               
+            <p>I started designing directly from the wireframe I was given, trusting that the scope was as simple as briefed. It wasn't. Missing features surfaced one by one during the design phase: password reset, account deletion, language switching, error states. Each one required stepping back to redesign flows I thought were already settled. Next time I'd push for a rougher but more complete feature map before touching Figma, even if it's just a whiteboard sketch. It's faster to discover gaps on paper than in a component library.</p>
+            </div>
+          </div>
+
+      </div>
+    </div>
+<div>
+
+<div class="flex justify-end  mt-10 md:mt-30">
+       <a href="/rct/works/mahola/" class="c-project__link flex gap-2 items-center">
+        Next <img class="img-fluid h-5 aspect-square w-auto" src="../../../images/arrow.svg" alt="">  
+          </a>
+          
+         
+   </div>
+
+  </section>
+
+
+
+
+ <!-- footer-->
+  <footer class="c-footer">
+  <section class="c-section__footer">
+<img class="img-fluid  w-auto" src="../../../images/footer.webp" alt="Rc. Portfolio">
+  </section>
+  </footer>
+
+
+ <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script> 
+ <script src="../../../scripts.js"></script>
+
+</body>
+</html>

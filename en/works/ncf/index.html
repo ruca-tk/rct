@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="googlebot" content="noindex, nofollow, noarchive">
+<meta name="bingbot" content="noindex, nofollow, noarchive">
+<link rel="icon" type="image/png" href="../../../favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="../../../favicon.svg" />
+<link rel="shortcut icon" href="../../../favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="../../../apple-touch-icon.png" />
+<link rel="manifest" href="../../../site.webmanifest" />
+  <link rel="stylesheet" href="../../../style.css">
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.17/dist/lenis.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Rc Portfolio - New Context Festival 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.168.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.168.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <div class="c-nav mx-auto md:max-w-5xl w-full w-full px-6">
+    <nav class="flex items-center justify-between">
+      <a class="c-brand" href="/rct/en/">Rc.</a>
+      <ul class="hidden md:flex gap-8">
+        <li><a href="/rct/en/">Home</a></li>
+      </ul>
+
+    <button id="hamburger" aria-label="Open navigation" class="md:hidden flex flex-col justify-center w-8 h-8 relative z-50">
+      <span class="block w-8 bg-[var(--bg)] rounded-sm mb-2 transition-transform duration-300"></span>
+      <span class="block w-8 bg-[var(--bg)] rounded-sm mb-2 transition-all duration-300"></span>
+      <span class="block w-8 bg-[var(--bg)] rounded-sm transition-transform duration-300"></span>
+    </button>
+
+    <nav id="mobileNav" class="mobile-nav">
+      <ul>
+        <li><a href="/rct/en/">Home</a></li>
+         <li class="lang-switcher"><a href="/rct/">JA</a></li>
+      </ul>
+    </nav>
+
+    </nav>
+  </div>
+
+
+
+
+  <!--Content-->
+  <section class="c-section">
+  <div class="container mx-auto max-w-6xl px-6">
+   <img class="img-fluid rounded-2xl" src="../../../images/ncf_01.webp" alt="New Context Festival 2026">
+    </div>
+    <div class="container mx-auto max-w-6xl px-6">
+      <div class="c-project">
+        <div class="c-project-title mb-10">
+          <h1>New Context Festival</h1>
+          <p class="c-project-role mb-10">Motion Engineering & Interaction Design</p>
+
+          <ul class="c-tags mb-5">
+            <li>Motion Engineering</li>
+            <li>Interaction Design</li>
+            <li>Design Collaboration</li>
+            <li>Front-End Dev</li>
+          </ul>
+
+          <p>DG New Context Festival is a new annual event from Digital Garage — a cultural festival combining music, dance, drone show, and technology. This was the first edition. The visual design was led by a separate designer. My role was motion and interaction: I joined the design process early, worked together on what animations were possible, and built everything that moves on the site.</p>
+
+          </div>
+          <a href="https://ncf.garage.co.jp/" target="_blank" class="c-project__link flex gap-2 items-center">
+           View Site <img class="img-fluid h-5 aspect-square w-auto" src="../../../images/arrow.svg" alt="">
+          </a>
+
+          <!-- 01 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>01</span>
+              <h2>Context</h2>
+            </div>
+            <div class="c-project-body">
+              <p>DG New Context Festival is a new annual event from Digital Garage — a cultural festival combining music, dance, drone show, and technology, held in the heart of Shibuya. This was the first edition, and potentially the first of many. The visual design was led by a separate designer. My role was motion and interaction: I came into the process early, collaborated on what was possible, and built everything that moves.</p>
+            </div>
+          </div>
+
+          <!-- 02 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>02</span>
+              <h2>Direction</h2>
+            </div>
+            <div class="c-project-body">
+              <p>Because the visual design wasn't mine, my job was to understand the designer's intent and push it further through motion. We worked together across several online Figma sessions — not just implementing her decisions but contributing to them. The best interactions on this site came out of that back-and-forth, not from either of us working alone.</p>
+            </div>
+          </div>
+
+          <!-- 03 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>03</span>
+              <h2>Key Decisions</h2>
+            </div>
+            <div class="c-project-body">
+
+              <p class="mb-10"><span class="text-lg c-label">01. Matrix Text</span>
+              The hero title doesn't appear — it arrives. On load, characters jumble in a matrix-style scramble before resolving into the actual text. The same effect fires on each section title as it scrolls into view: letters scramble, then return to their correct state. It reflects the festival's theme of collision and emergence — context clashing before something new forms.</p>
+
+              <p class="mb-10"><span class="text-lg c-label">02. Rethinking the Blur Effect</span>
+              The designer wanted blurred images for the artist section. I raised a consideration: artists and their management care deeply about how they're represented, and a blurred face as a default state could create friction with the talent. I proposed keeping the images sharp by default and using the blur as a hover reveal instead — moving from blurred to clear on interaction. She loved it. I added a bezier curve transition and a subtle scale effect to make the reveal feel considered rather than mechanical.</p>
+
+              <p class="mb-10"><span class="text-lg c-label">03. Logo Micro-Animation</span>
+              The NCF logo consists of three geometric shapes. On hover, each shape independently rotates to a random angle, scales to a slightly randomised size, and changes to a random colour from the site's palette. Every hover is different. It gives the logo personality without breaking the brand — playful and unpredictable, but always within the colour system. When a modal opens, the same logo icons appear scattered across the background in random colours, adding depth and energy to what could have been a plain overlay.</p>
+
+              <p><span class="text-lg c-label">04. Mobile Nav Expansion</span>
+              The designer asked for a mobile navigation that grows in height when opened rather than overlaying the full screen. I built the nav to animate its height on open, revealing menu items progressively. It feels physical — like something unfolding — and keeps the experience consistent with the tactile quality of the rest of the site.</p>
+            </div>
+          </div>
+
+          <!-- 04 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>04</span>
+              <h2>Design</h2>
+            </div>
+            <div class="c-project-body">
+              <p>The site is dark, high-energy, and dense — appropriate for a festival. The video hero sets the tone immediately. Each section — music, drone show, urban sports — has its own visual identity within the same system. The motion layer sits on top of all of it: the matrix text gives every section entry a moment of drama, the artist hover interactions add tactility, and the logo animations add a constant low-level playfulness that rewards attention.</p>
+            </div>
+          </div>
+
+          <!-- 05 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>05</span>
+              <h2>Build</h2>
+            </div>
+            <div class="c-project-body">
+              <p>Built with Vite, Tailwind CSS, GSAP, Lenis, and vanilla JS. The matrix text effect uses character randomisation on a timer, cycling through random characters before locking to the correct value letter by letter. The logo hover randomisation uses <code>Math.random()</code> to generate rotation, scale, and colour values from a defined palette array on each mouseenter event. The modal background icons are positioned and coloured using the same randomisation pattern, spawned on modal open and cleared on close.</p>
+            </div>
+          </div>
+
+          <!-- 06 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>06</span>
+              <h2>Outcome</h2>
+            </div>
+            <div class="c-project-body">
+              <p>The site launched for the February 2026 festival. The collaboration model — designer leading visuals, me leading motion — produced interactions neither of us would have reached working independently. The hover blur reversal became one of the most distinctive details on the site, and it came directly from working through the problem together.</p>
+            </div>
+          </div>
+
+          <!-- 07 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>07</span>
+              <h2>Reflection</h2>
+            </div>
+            <div class="c-project-body">
+              <p>Working from another designer's Figma file meant I had less context for some decisions than I would have had if I'd designed it myself. A few motion timings took longer to get right because I was working out the intended feel during the build rather than having it defined upfront. In future collaborations I'd push for motion to be specified — even loosely — in the design file itself. A rough timing note goes a long way.</p>
+            </div>
+          </div>
+
+</div>
+
+<img class="img-fluid rounded-2xl" src="../../../images/ncf_02.webp" alt="New Context Festival 2026">
+<img class="img-fluid rounded-2xl md:mt-30 mt-10" src="../../../images/ncf_03.webp" alt="New Context Festival 2026">
+<img class="img-fluid rounded-2xl md:mt-30 mt-10" src="../../../images/ncf_04.webp" alt="New Context Festival 2026">
+
+<div>
+
+<div class="flex justify-between mt-10 md:mt-30">
+       <a href="/rct/works/ncc/" class="c-project__link -previous flex gap-2 items-center">
+        <img class="img-fluid h-5 aspect-square w-auto" src="../../../images/arrow.svg" alt=""> Previous
+          </a>
+   </div>
+
+  </section>
+
+
+
+
+ <!-- footer-->
+  <footer class="c-footer">
+  <section class="c-section__footer">
+<img class="img-fluid  w-auto" src="../../../images/footer.webp" alt="Rc. Portfolio">
+  </section>
+  </footer>
+
+
+ <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script>
+ <script src="../../../scripts.js"></script>
+
+</body>
+</html>

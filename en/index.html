@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,7 +11,7 @@
 <link rel="shortcut icon" href="/favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 <link rel="manifest" href="/site.webmanifest" />
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.17/dist/lenis.css">
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <title>Rc.T Portfolio</title>
@@ -31,21 +31,21 @@
 
   <div class="c-nav mx-auto md:max-w-5xl w-full w-full px-6">
     <nav class="flex items-center justify-between">
-      <a class="c-brand" href="/rct/">Rc.</a>
+      <a class="c-brand" href="/rct/en/">Rc.</a>
       <ul class="hidden md:flex gap-8">
         <li><a href="#works">Works</a></li>
         <li><a href="#expertise">Expertise</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
-         <li class="lang-switcher"><a href="/en/">EN</a></li>
+        <li class="lang-switcher"><a href="/rct/">JA</a></li>
       </ul>
-
-    <button id="hamburger" aria-label="ナビゲーションを開く" class="md:hidden flex flex-col justify-center w-8 h-8 relative z-50">
+  
+    <button id="hamburger" aria-label="Open navigation" class="md:hidden flex flex-col justify-center w-8 h-8 relative z-50">
       <span class="block w-8 bg-[var(--bg)] rounded-sm mb-2 transition-transform duration-300"></span>
       <span class="block w-8 bg-[var(--bg)] rounded-sm mb-2 transition-all duration-300"></span>
       <span class="block w-8 bg-[var(--bg)] rounded-sm transition-transform duration-300"></span>
     </button>
-
+   
     <nav id="mobileNav" class="mobile-nav">
       <ul>
         <li><a href="#works" onclick="toggleNav()">Works</a></li>
@@ -54,10 +54,10 @@
         <li><a href="#contact" onclick="toggleNav()">Contact</a></li>
       </ul>
     </nav>
-
+  
     </nav>
   </div>
-
+ 
 <!-- KV -->
 <div class="c-kv">
     <div id="canvas-container">
@@ -65,23 +65,23 @@
         <div class="loader"></div>
         <div class="loading-text">Loading model…</div>
       </div>
-
+     
     </div>
     <div class="c-kv__content">
       <h1>built curious</h1>
-      <p>UIエンジニア & フロントエンドデベロッパー
-        <span>- ポートフォリオ -</span>
+      <p>UI Engineer & Frontend Developer
+        <span>- My Portfolio  -</span>
       </p>
-
+  
     </div>
   </div>
 
   <!--works-->
-  <section class="c-section" id="works">
+  <section class="c-section" id="works"> 
   <div class="container mx-auto max-w-6xl px-6">
    <div class="c-title">
       <h2>Works</h2>
-      <p>最新プロジェクト</p>
+      <p >Latest Projects</p>
       </div>
 <!-- New Context Festival 2026 -->
     <div class="c-works">
@@ -89,19 +89,19 @@
         <div class="c-works__item__content">
           <h3>New Context Festival 2026</h3>
        <ul class="c-tags">
-        <li>UIエンジニア</li>
-        <li>フロントエンドデベロッパー</li>
+        <li>UI Engineer</li>
+        <li>Frontend Developer</li>
         </ul>
         </div>
-        <a href="/rct/works/ncf/"  class="c-works__item__link">
-          <img class="img-fluid h-5 aspect-square w-auto" src="images/arrow.svg" alt="">
+        <a href="/rct/en/works/ncf/"  class="c-works__item__link">
+          <img class="img-fluid h-5 aspect-square w-auto" src="../images/arrow.svg" alt="">
         </a>
 
         </div>
         <div class="c-works__item__image">
-          <img class="img-fluid" src="images/ncf_01.webp" alt="New Context Festival 2026">
+          <img class="img-fluid" src="../images/ncf_01.webp" alt="New Context Festival 2026">
         </div>
-
+       
     </div>
 
 <!-- New Context Conference Archive -->
@@ -110,22 +110,22 @@
           <div class="c-works__item__content">
             <h3>New Context Conference Archive</h3>
          <ul class="c-tags">
-          <li>UXアーキテクチャ</li>
-          <li>UIシステム</li>
-          <li>モーションデザイン</li>
-          <li>CMSアーキテクチャ（WordPress）</li>
+          <li>UX Architecture</li>
+          <li>UI System</li>
+          <li>Motion Design</li>
+          <li>CMS Architecture (WordPress)</li>
           </ul>
           </div>
-          <a href="/rct/works/ncc/"  class="c-works__item__link">
-            <img class="img-fluid h-5 aspect-square w-auto" src="images/arrow.svg" alt="">
+          <a href="/rct/en/works/ncc/"  class="c-works__item__link">
+            <img class="img-fluid h-5 aspect-square w-auto" src="../images/arrow.svg" alt="">
           </a>
-
+  
           </div>
           <div class="c-works__item__image">
-            <img class="img-fluid" src="images/archive_01.webp" alt="New Context Conference">
+            <img class="img-fluid" src="../images/archive_01.webp" alt="New Context Conference">
           </div>
-
-      </div>
+         
+      </div> 
 
       <!-- New Context Conference Summer 2025 -->
       <div class="c-works">
@@ -133,22 +133,22 @@
           <div class="c-works__item__content">
             <h3>NCC Summer 2025</h3>
          <ul class="c-tags">
-          <li>UIデザイン</li>
-          <li>フロントエンド開発</li>
-          <li>モーションデザイン</li>
-
+          <li>UI Design</li>
+          <li>Front-End Development</li>
+          <li>Motion Design</li>
+       
           </ul>
           </div>
-          <a href="/rct/works/nccsummer/"  class="c-works__item__link">
-            <img class="img-fluid h-5 aspect-square w-auto" src="images/arrow.svg" alt="NCC Summer 2025">
+          <a href="/rct/en/works/nccsummer/"  class="c-works__item__link">
+            <img class="img-fluid h-5 aspect-square w-auto" src="../images/arrow.svg" alt="NCC Summer 2025">
           </a>
-
+  
           </div>
           <div class="c-works__item__image">
-            <img class="img-fluid" src="images/nccsummer_01.webp" alt="New Context Conference Summer 2025">
+            <img class="img-fluid" src="../images/nccsummer_01.webp" alt="New Context Conference Summer 2025">
           </div>
-
-      </div>
+         
+      </div> 
 
       <!-- DG Camp Akiya -->
       <div class="c-works">
@@ -156,65 +156,65 @@
           <div class="c-works__item__content">
             <h3>DG Camp Akiya</h3>
          <ul class="c-tags">
-          <li>クリエイティブディレクション</li>
-          <li>UI/UXデザイン</li>
-          <li>フロントエンド開発</li>
-          <li>モーションデザイン</li>
-
+          <li>Creative Direction</li>
+          <li>UI/UX Design</li>
+          <li>Front-End Development</li>
+          <li>Motion Design</li>
+       
           </ul>
           </div>
-          <a href="/rct/works/dgakiya/"  class="c-works__item__link">
-            <img class="img-fluid h-5 aspect-square w-auto" src="images/arrow.svg" alt="">
+          <a href="/rct/en/works/dgakiya/"  class="c-works__item__link">
+            <img class="img-fluid h-5 aspect-square w-auto" src="../images/arrow.svg" alt="">
           </a>
-
+  
           </div>
           <div class="c-works__item__image">
-            <img class="img-fluid" src="images/akiya_01.webp" alt="DG Camp Akiya">
+            <img class="img-fluid" src="../images/akiya_01.webp" alt="DG Camp Akiya">
           </div>
-
-      </div>
+         
+      </div> 
       <!-- DGI -->
       <div class="c-works">
         <div class="c-works__item flex items-start md:items-center justify-between  mb-4 md:mb-8">
           <div class="c-works__item__content">
             <h3>DG Incubation</h3>
          <ul class="c-tags">
-          <li>UXアーキテクチャ</li>
-          <li>UIデザイン</li>
-          <li>CMSアーキテクチャ（WordPress）</li>
+          <li>UX Architecture</li>
+          <li>UI Design</li>
+          <li>CMS Architecture (WordPress)</li>
           </ul>
           </div>
-          <a href="/rct/works/dgi/"  class="c-works__item__link">
-            <img class="img-fluid h-5 aspect-square w-auto" src="images/arrow.svg" alt="DG Incubation">
+          <a href="/rct/en/works/dgi/"  class="c-works__item__link">
+            <img class="img-fluid h-5 aspect-square w-auto" src="../images/arrow.svg" alt="DG Incubation">
           </a>
-
+  
           </div>
           <div class="c-works__item__image">
-            <img class="img-fluid" src="images/dgi_01.webp" alt="DG Incubation">
+            <img class="img-fluid" src="../images/dgi_01.webp" alt="DG Incubation">
           </div>
-
-      </div>
+         
+      </div> 
 <!-- Hashiri -->
       <div class="c-works">
         <div class="c-works__item flex items-start md:items-center justify-between  mb-4 md:mb-8">
           <div class="c-works__item__content">
             <h3>Hashiri San Francisco</h3>
          <ul class="c-tags">
-          <li>UIデザイン</li>
-          <li>フロントエンド開発</li>
-          <li>モーションデザイン</li>
+          <li>UI Design</li>
+          <li>Front-End Development</li>
+          <li>Motion Design</li>
           </ul>
           </div>
-          <a href="/rct/works/hashirisf/"  class="c-works__item__link">
-            <img class="img-fluid h-5 aspect-square w-auto" src="images/arrow.svg" alt="">
+          <a href="/rct/en/works/hashirisf/"  class="c-works__item__link">
+            <img class="img-fluid h-5 aspect-square w-auto" src="../images/arrow.svg" alt="">
           </a>
-
+  
           </div>
           <div class="c-works__item__image">
-            <img class="img-fluid" src="images/hashiri_01.webp" alt="Hashiri San Francisco">
+            <img class="img-fluid" src="../images/hashiri_01.webp" alt="Hashiri San Francisco">
           </div>
-
-      </div>
+         
+      </div> 
 
       <!-- mahola-->
       <div class="c-works">
@@ -222,22 +222,22 @@
           <div class="c-works__item__content">
             <h3>mahola</h3>
          <ul class="c-tags">
-          <li>UIデザイン</li>
-          <li>フロントエンド開発</li>
-          <li>モーションデザイン</li>
-          <li>ブランド実装</li>
+          <li>UI Design</li>
+          <li>Front-End Development</li>
+          <li>Motion Design</li>
+          <li>Brand Implementation</li>
           </ul>
           </div>
-          <a href="/rct/works/mahola/"  class="c-works__item__link">
-            <img class="img-fluid h-5 aspect-square w-auto" src="images/arrow.svg" alt="">
+          <a href="/rct/en/works/mahola/"  class="c-works__item__link">
+            <img class="img-fluid h-5 aspect-square w-auto" src="../images/arrow.svg" alt="">
           </a>
-
+  
           </div>
           <div class="c-works__item__image">
-            <img class="img-fluid" src="images/mahola_01.webp" alt="mahola">
+            <img class="img-fluid" src="../images/mahola_01.webp" alt="mahola">
           </div>
-
-      </div>
+         
+      </div> 
 
       <!-- mahola wallet-->
       <div class="c-works">
@@ -245,28 +245,28 @@
           <div class="c-works__item__content">
             <h3>mahola Wallet</h3>
          <ul class="c-tags">
-          <li>プロダクトデザイン</li>
-          <li>UIシステム</li>
-          <li>機能戦略</li>
-          <li>Webアプリデザイン</li>
+          <li>Product Design</li>
+          <li>UI System</li>
+          <li>Feature Strategy</li>
+          <li>Web App Design</li>
           </ul>
           </div>
-          <a href="/rct/works/wallet/"  class="c-works__item__link">
-            <img class="img-fluid h-5 aspect-square w-auto" src="images/arrow.svg" alt="">
+          <a href="/rct/en/works/wallet/"  class="c-works__item__link">
+            <img class="img-fluid h-5 aspect-square w-auto" src="../images/arrow.svg" alt="">
           </a>
-
+  
           </div>
           <div class="c-works__item__image">
-            <img class="img-fluid" src="images/works_mahola_wallet.webp" alt="mahola wallet">
+            <img class="img-fluid" src="../images/works_mahola_wallet.webp" alt="mahola wallet">
           </div>
-
+         
+      </div> 
+      
+   
+   
       </div>
 
-
-
-      </div>
-
-
+    
   </div>
   </section>
 
@@ -275,33 +275,33 @@
     <div class="container mx-auto max-w-6xl px-6">
       <div class="c-title">
         <h2>Expertise</h2>
-        <p>やっていること</p>
+        <p>What I dabble in</p>
       </div>
       <div class="c-cards">
         <div class="c-card">
           <p>I</p>
           <div class="c-card__content">
-          <h4>UIアーキテクチャ</h4>
+          <h4>UI Architecture</h4>
           <ul>
-            <li>デザインシステムとスケーラブルなコンポーネント</li>
-            <li>情報アーキテクチャ</li>
-            <li>バイリンガルCMSの構築</li>
-            <li>一貫性の設計</li>
+            <li>Design systems & scalable components</li>
+            <li>Information architecture</li>
+            <li>Bilingual CMS structuring</li>
+            <li>Consistency at scale</li>
           </ul>
           </div>
         </div>
 
-
+      
 
         <div class="c-card">
           <p>II</p>
           <div class="c-card__content">
-          <h4>フロントエンドエンジニアリング</h4>
+          <h4>Frontend Engineering</h4>
           <ul>
-            <li>パフォーマンス最適化</li>
-            <li>モーションシステム（GSAP / ScrollTrigger）</li>
-            <li>カスタムWordPressテーマ</li>
-            <li>Viteワークフロー、クリーンなJS</li>
+            <li>Performance optimization</li>
+            <li>Motion systems (GSAP / ScrollTrigger)</li>
+            <li>Custom WordPress themes</li>
+            <li>Vite workflows, clean JS</li>
           </ul>
           </div>
         </div>
@@ -309,19 +309,19 @@
         <div class="c-card">
           <p>III</p>
           <div class="c-card__content">
-          <h4>横断的な実行力</h4>
+          <h4>Cross-Functional Execution</h4>
           <ul>
-            <li>デザインとエンジニアリングの橋渡し</li>
-            <li>JP/ENステークホルダーとの調整</li>
-            <li>クリエイティブディレクション・デリバリー</li>
-            <li>ベンダーコーディネーション</li>
+            <li>Bridge design ↔ engineering</li>
+            <li>JP/EN stakeholder alignment</li>
+            <li>Creative direction &amp; delivery</li>
+            <li>Vendor coordination</li>
           </ul>
           </div>
         </div>
 
 
       </div>
-
+   
     </div>
   </section>
 
@@ -330,47 +330,47 @@
     <div class="container mx-auto max-w-6xl px-6">
       <div class="c-title">
         <h2>About</h2>
-        <p>仕事について</p>
+        <p>what I do</p>
       </div>
     </div>
     <div class="container mx-auto max-w-6xl md:max-w-4xl px-6">
       <div class="c-about">
       <div class="c-about__content text-center">
-
+      
         <p class=" mb-8">
-          Webのデザインとエンジニアリングをしています。<br/>
-          ブランドのかたちをつくることもあれば、<br/>
-          それを動かすコードを書くこともある。
-
+          I design and build for the web.<br/>
+          Sometimes that means shaping a brand.<br/>
+          Sometimes it means writing the code that brings it to life.
+          
           </p>
-
+          
           <p>
-            アイデアと実装が交わる場所に関心があります。<br>
-            ビジュアルは飾りではなく、<br>
-            エンジニアリングは後付けでもない。
+            I’m interested in the space where ideas meet implementation.<br>
+            Visuals are not decoration.<br>
+            Engineering is not an afterthought.
           </p>
       </div>
-    </div>
+    </div> 
   </section>
  <!-- contact-->
  <section class="c-section" id="contact">
   <div class="container mx-auto max-w-6xl px-6">
-
-   <p class="text-center">
-    <a class="text-center c-hello" href="mailto:ruca.contact@gmail.com">連絡する <span class="c-hello__icon">👋</span></a></p>
+  
+   <p class="text-center"> 
+    <a class="text-center c-hello" href="mailto:ruca.contact@gmail.com">Say hello <span class="c-hello__icon">👋</span></a></p>
   </div>
  </section>
 
  <!-- footer-->
   <footer class="c-footer">
   <section class="c-section__footer">
-<img class="img-fluid  w-auto" src="images/footer.webp" alt="Rc. Portfolio">
+<img class="img-fluid  w-auto" src="../images/footer.webp" alt="Rc. Portfolio">
   </section>
   </footer>
 
- <script type="module" src="apple.js"></script>
- <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script>
- <script src="scripts.js"></script>
+ <script type="module" src="../apple.js"></script>
+ <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script> 
+ <script src="../scripts.js"></script>
 
 </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -33,31 +33,32 @@
     <nav class="flex items-center justify-between">
       <a class="c-brand" href="../../">Rc.</a>
       <ul class="hidden md:flex gap-8">
-       
-        <li><a href="../../">Home</a></li>
+
+        <li><a href="../../">ホーム</a></li>
+        <li class="lang-switcher"><a href="../../en/">EN</a></li>
       </ul>
-  
-    <button id="hamburger" aria-label="Open navigation" class="md:hidden flex flex-col justify-center w-8 h-8 relative z-50">
+
+    <button id="hamburger" aria-label="ナビゲーションを開く" class="md:hidden flex flex-col justify-center w-8 h-8 relative z-50">
       <span class="block w-8 bg-[var(--bg)] rounded-sm mb-2 transition-transform duration-300"></span>
       <span class="block w-8 bg-[var(--bg)] rounded-sm mb-2 transition-all duration-300"></span>
       <span class="block w-8 bg-[var(--bg)] rounded-sm transition-transform duration-300"></span>
     </button>
-   
+
     <nav id="mobileNav" class="mobile-nav">
       <ul>
-     
-        <li><a href="../../" onclick="toggleNav()">Home</a></li>
+
+        <li><a href="../../" onclick="toggleNav()">ホーム</a></li>
       </ul>
     </nav>
-  
+
     </nav>
   </div>
- 
+
 
 
 
   <!--Content-->
-  <section class="c-section"> 
+  <section class="c-section">
   <div class="container mx-auto max-w-6xl px-6">
    <img class="img-fluid rounded-2xl" src="../../images/mahola_01.webp" alt="mahola">
     </div>
@@ -65,65 +66,128 @@
       <div class="c-project">
         <div class="c-project-title mb-10">
           <h1>mahola</h1>
-          <p class="c-project-role mb-10">Web Design & Motion-Driven Front-End Development</p>
-           <p>mahola is a Web3-focused brand site built to communicate a bold, character-driven identity within the blockchain ecosystem. Excluding the logo, I led the visual design, interaction concept, and full front-end development, delivering a motion-heavy, custom HTML experience.</p>
-      
+          <p class="c-project-role mb-10">Webブランドディレクション & フロントエンド開発</p>
+
+          <ul class="c-tags mb-5">
+            <li>Webブランドディレクション</li>
+            <li>Web3</li>
+            <li>フロントエンド開発</li>
+            <li>モーション・アニメーション</li>
+          </ul>
+
+          <p>mahola は Crypto Garage（Digital Garageの子会社）が開発したWeb3 APIプラットフォームです。ブリーフはホワイトボードセッションから——正式な仕様書もコピーライターもコンテンツ戦略もなし。ロゴとマスコットを起点に、ビジネス意思決定者と開発者という2つの異なるオーディエンスに対応したブランドサイトへと仕上げるまで、ビジュアルディレクション・コンテンツアーキテクチャ・フロントエンド開発のすべてをリードしました。</p>
+
           </div>
           <a href="https://www.mahola.xyz/" target="_blank" class="c-project__link flex gap-2 items-center">
-           View Site <img class="img-fluid h-5 aspect-square w-auto" src="../../images/arrow.svg" alt="">
+           サイトを見る <img class="img-fluid h-5 aspect-square w-auto" src="../../images/arrow.svg" alt="">
           </a>
-    
-          <div class="c-project-section">
-            <h2>Scope</h2>
-            <ul class="c-list">
-              <li>UI/UX design</li>
-              <li>Web3-oriented brand positioning</li>
-              <li>Front-end architecture (HTML / CSS / JavaScript)</li>
-              <li>Advanced animation implementation</li>
-              <li>Responsive development</li>
-            </ul>
+
+          <!-- 01 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>01</span>
+              <h2>背景</h2>
+            </div>
+            <div class="c-project-body">
+              <p>mahola は Crypto Garage（Digital Garageの子会社）が開発したWeb3 APIプラットフォームです。プロジェクトはホワイトボードセッションから始まりました：タグライン、導入テキスト、パートナーセクション、3つのユースケース、コンタクトフォーム。ブリーフ文書もなく、仕様書もなく、コピーライターもいない。渡されたアセットはロゴ、カラーパレット、ブランドガイドライン、そしてマスコット——チームがすでに愛着を持っているオレンジのクマでした。複雑な技術プロダクトを、ビジネス意思決定者と開発者という2つの全く異なるオーディエンスに説明できるWebプレゼンスを作ることが私の仕事でした。</p>
+            </div>
           </div>
 
-<div class="c-project-section">
-  <h2>Challenges</h2>
-  <ul class="c-list">
-    <li>Designing a cohesive system around an externally provided logo</li>
-    <li>Creating strong motion without overwhelming usability</li>
-    <li>Desiging a site that is playful and engaging</li>
-    <li>Maintaining consistency across varied screen sizes</li>
-  </ul>
-</div>
+          <!-- 02 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>02</span>
+              <h2>方向性</h2>
+            </div>
+            <div class="c-project-body">
+              <p>ブランドには強い素材がありましたが、Webのビジュアル言語はありませんでした。アセットが示唆するものからそれを構築しました。ディープパープルを支配的な背景色とし、クマとブランドカラーが映えるスペースを作りました。クリームはより情報量の多いセクションに使い、ブラックはゾーン間のトランジションポイントとして機能させました。3つの異なるビジュアルの温度感、一つのまとまったアイデンティティ。</p>
+              <p class="mt-5">クマは装飾ではありませんでした——ブランドの感情的な錨であり、社内でもすでに人気がありました。ヒーローからのぞかせ、マーキートランジションの後にスター目の丸いバッジとして登場させ、ユースケースのイラストに埋め込みました。スクロールのどの深さにも彼の存在があることは、偶然ではありませんでした。</p>
+            </div>
+          </div>
 
-<div class="c-project-section">
-  <h2>Approach</h2>
-  <ul class="c-list">
-    <li>Designing for a Web3 audience while maintaining clarity and credibility</li>
-    <li>Developed a structured animation language to guide interaction</li>
-    <li>Optimized animation timing and asset delivery for stability</li>
-  </ul>
-</div>
+          <!-- 03 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>03</span>
+              <h2>主な判断</h2>
+            </div>
+            <div class="c-project-body">
+              <p>ホワイトボードはマーケティングサイトを示していました。4つの判断がスコープをより深く考えられたものへと押し広げました。</p>
 
-<div class="c-project-section">
-  <h2>Results</h2>
-  <p>The site presents a clear and distinctive Web3 brand presence.
-    Motion enhances engagement while preserving navigational clarity.
-    Despite heavy animation, performance remains stable across devices.
-    The custom implementation allows precise control over interaction and presentation.</p>
-</div>
+              <p class="mb-10 mt-5"><span class="text-lg c-label">01. コンテンツ構造</span>
+              導入テキストは一塊の密なブロックとして届きました。mahola について3つの核心的なポイントを特定し、それぞれを別々に展開するようチームに依頼しました。同じ情報でも、テキストの壁への耐性が低いオーディエンスにとって読みやすくスキャンしやすい形に変わりました。</p>
+
+              <p class="mb-10"><span class="text-lg c-label">02. デモリクエスト</span>
+              元のコンバージョンポイントはコンタクトフォームでした。ドキュメントセレクター付きのデモリクエストモーダルを追加しました——直接コンタクトにコミットする前にプロダクトを評価したいビジネスリードのための、より適格なエントリーポイントです。</p>
+
+              <p class="mb-10"><span class="text-lg c-label">03. 開発者オーディエンス</span>
+              社内文書やマニュアルを調べていたとき、別のイベント用にチームが作成したプレゼンテーションを見つけました。計画されていたサイトには含まれていない技術的な詳細が含まれていました。開発者はホワイトボードが完全に見逃していた第2のオーディエンスだと気づきました——APIを評価する人間は、ビジネス意思決定者とは異なるニーズを持っています。その情報をAPIフィーチャーリスト付きの専用セクションとして表面化させました。</p>
+
+              <p><span class="text-lg c-label">04. 価格</span>
+              価格はブリーフに含まれていませんでした。私から提案しました。価格のないB2B SaaSサイトは、コンタクトする前に予算適合を評価しようとする意思決定者にとって摩擦になります。チームはティアの設定に苦労しましたが、最終的にまとまりました。3つのティア、明確な構造で。</p>
+            </div>
+          </div>
+
+          <!-- 04 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>04</span>
+              <h2>デザイン</h2>
+            </div>
+            <div class="c-project-body">
+              <p>ビジュアルシステムは3つのゾーンで展開され、マスコットがそれをつなぎます。ヒーローは自信を持って始まります：大きなボールドなタイポグラフィ、ボトムエッジからのぞくクマ、明確な階層を持つ2つのCTA。ブラックのマーキーバンドへのトランジションは星の絵文字をビジュアルビートとして使います——クマは興奮するとスター目になります——その後クリームのセクションが開き、より温かくアプローチしやすいものになります。</p>
+              <p class="mt-5">ユースケースセクションは、サイトの最もファンクショナルな部分でもブランドキャラクターを保ち、各ユースケースのイラストアイコンにクマを埋め込んでいます。各ゾーンには異なるビジュアルの重さがありますが、何も断絶した感じがしない。最初のスクロールで見えるより、システムは意図的に設計されています。</p>
+            </div>
+          </div>
+
+          <!-- 05 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>05</span>
+              <h2>開発</h2>
+            </div>
+            <div class="c-project-body">
+              <p>カスタムHTML、CSS、JavaScript——フレームワークもテンプレートもなし。ブラウザで直接作業することで、フレームワークが抽象化してしまうタイミングとレイアウトの挙動を精密にコントロールできました。</p>
+              <p class="mt-5">最もブランドウェイトを持つ2つのアニメーションは、カーソルに追従するクマの目とスター目のマーキーです。カーソルインタラクションは開発者CTAセクション——サイトの最も技術的な部分——に配置され、そうでなければ失われがちな遊び心のあるアイデンティティを保ちます。すべてのスクロールトリガーアニメーションは一貫したタイミングの語彙を共有し、サイトが煩雑ではなくコントロールされた印象を与えます。レスポンシブ対応は後付けではなく、最初から組み込みました。</p>
+            </div>
+          </div>
+
+          <!-- 06 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>06</span>
+              <h2>成果</h2>
+            </div>
+            <div class="c-project-body">
+              <p>サイトはmahola.xyzでライブ状態を維持し、積極的に問い合わせを生み出しています。単一の一貫した体験の中で、2つの異なるオーディエンスに対応しています。価格セクション・開発者リソースセクション・デモリクエストモーダルはすべて私が提案したもの。どれもホワイトボードにはありませんでした。</p>
+            </div>
+          </div>
+
+          <!-- 07 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>07</span>
+              <h2>振り返り</h2>
+            </div>
+            <div class="c-project-body">
+              <p>開発者オーディエンスを特定したのはプロジェクトの途中、社内文書を調べている最中でした。結果的にはうまくいきましたが、計画的というよりリアクティブなものでした。最初からより構造化されたディスカバリーフェーズ——「他に誰がこのサイトを訪れて、何を必要とするか？」という問いを投げかけるだけでも——そのオーディエンスをより早く特定し、開発者セクションに発展させる余地が生まれたはずです。</p>
+              <p class="mt-5">価格についても同様です。プロセスの後半で提案しました。最初の会話の後すぐに商業的な構造について確認していれば、チームがティアをまとめる時間がより長く取れたはずです。そのような確認は、早い段階での少し難しい会話の価値があります。</p>
+            </div>
+          </div>
 
 </div>
 
 <img class="img-fluid rounded-2xl" src="../../images/mahola_02.webp" alt="mahola">
 <img class="img-fluid rounded-2xl md:mt-30 mt-10" src="../../images/mahola_03.webp" alt="mahola">
 <img class="img-fluid rounded-2xl md:mt-30 mt-10" src="../../images/mahola_04.webp" alt="mahola">
-    
+
 <div>
 
 <div class="flex justify-between mt-10 md:mt-30">
        <a href="/rct/works/wallet/" class="c-project__link -previous flex gap-2 items-center">
-        <img class="img-fluid h-5 aspect-square w-auto" src="../../images/arrow.svg" alt=""> Previous 
+        <img class="img-fluid h-5 aspect-square w-auto" src="../../images/arrow.svg" alt=""> 前へ
           </a>
-          <a href="/rct/works/hashirisf/" class="c-project__link flex gap-2 items-center">Next <img class="img-fluid h-5 aspect-square w-auto" src="../../images/arrow.svg" alt="">
+          <a href="/rct/works/hashirisf/" class="c-project__link flex gap-2 items-center">次へ <img class="img-fluid h-5 aspect-square w-auto" src="../../images/arrow.svg" alt="">
            </a>
    </div>
 
@@ -140,7 +204,7 @@
   </footer>
 
 
- <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script> 
+ <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script>
  <script src="../../scripts.js"></script>
 
 </body>

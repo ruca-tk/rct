@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -33,87 +33,153 @@
     <nav class="flex items-center justify-between">
       <a class="c-brand" href="../../">Rc.</a>
       <ul class="hidden md:flex gap-8">
-       
-        <li><a href="../../">Home</a></li>
+        <li><a href="../../">ホーム</a></li>
       </ul>
-  
-    <button id="hamburger" aria-label="Open navigation" class="md:hidden flex flex-col justify-center w-8 h-8 relative z-50">
+
+    <button id="hamburger" aria-label="ナビゲーションを開く" class="md:hidden flex flex-col justify-center w-8 h-8 relative z-50">
       <span class="block w-8 bg-[var(--bg)] rounded-sm mb-2 transition-transform duration-300"></span>
       <span class="block w-8 bg-[var(--bg)] rounded-sm mb-2 transition-all duration-300"></span>
       <span class="block w-8 bg-[var(--bg)] rounded-sm transition-transform duration-300"></span>
     </button>
-   
+
     <nav id="mobileNav" class="mobile-nav">
       <ul>
-     
-        <li><a href="../../" onclick="toggleNav()">Home</a></li>
+        <li><a href="../../" onclick="toggleNav()">ホーム</a></li>
+       <li class="lang-switcher"><a href="../../en/">EN</a></li>
       </ul>
     </nav>
-  
+
     </nav>
   </div>
- 
+
 
 
 
   <!--Content-->
-  <section class="c-section"> 
+  <section class="c-section">
   <div class="container mx-auto max-w-6xl px-6">
    <img class="img-fluid rounded-2xl" src="../../images/ncf_01.webp" alt="New Context Festival 2026">
     </div>
     <div class="container mx-auto max-w-6xl px-6">
-      <div class="c-project ">
+      <div class="c-project">
         <div class="c-project-title mb-10">
           <h1>New Context Festival</h1>
-          <p class="c-project-role mb-10">UI Engineer & Frontend Developer</p>
-           <p>The DG New Context Festival site acted as the primary digital touchpoint for the event announcements, program content, and viewing entry. The overall design direction emphasized motion and energy.</p>
- 
-             <p>I joined primarily on implementation: motion systems, interaction behavior, performance stability, and analytics reporting.</p>
-      
+          <p class="c-project-role mb-10">モーションエンジニアリング & インタラクションデザイン</p>
+
+          <ul class="c-tags mb-5">
+            <li>モーションエンジニアリング</li>
+            <li>インタラクションデザイン</li>
+            <li>デザインコラボレーション</li>
+            <li>フロントエンド開発</li>
+          </ul>
+
+          <p>DG New Context FestivalはDigital Garageが手がける新しい年次イベントです——音楽、ダンス、ドローンショー、テクノロジーを組み合わせた文化的フェスティバル。初回エディション。ビジュアルデザインは別のデザイナーが担当しました。私の役割はモーションとインタラクション：デザインプロセスの早い段階から参加し、可能なアニメーションを一緒に検討し、サイト上で動くものをすべて構築しました。</p>
+
           </div>
           <a href="https://ncf.garage.co.jp/" target="_blank" class="c-project__link flex gap-2 items-center">
-           View Site <img class="img-fluid h-5 aspect-square w-auto" src="../../images/arrow.svg" alt="">
+           サイトを見る <img class="img-fluid h-5 aspect-square w-auto" src="../../images/arrow.svg" alt="">
           </a>
-    
 
-<div class="c-project-section">
-  <h2>Challenges</h2>
-  <ul class="c-list">
-    <li>Motion-heavy design intent needed to remain smooth and readable.</li>
-    <li>Mobile-dominant traffic meant lower-end devices had to be considered.</li>
-    <li>Peak hour surges required stability under load and predictable behavior.</li>
-    <li>Stakeholder reporting required clean GA4 summaries after the event.</li>
-  </ul>
-</div>
+          <!-- 01 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>01</span>
+              <h2>背景</h2>
+            </div>
+            <div class="c-project-body">
+              <p>DG New Context FestivalはDigital Garageが手がける新しい年次イベントで、渋谷の中心で開催される、音楽・ダンス・ドローンショー・テクノロジーを組み合わせた文化的フェスティバルです。初回エディション、そして数あるうちの最初の一回になるかもしれません。ビジュアルデザインは別のデザイナーが担当しました。私の役割はモーションとインタラクション：プロセスの早い段階から参加し、コラボレーションし、動くものをすべて構築しました。</p>
+            </div>
+          </div>
 
-<div class="c-project-section">
-  <h2>Goals</h2>
-  <ul class="c-list">
-    <li>Deliver motion that supports content—not distracts from it.</li>
-    <li>Prevent scroll-jack and layout shift across devices (especially iOS Safari).</li>
-    <li>Keep interactions consistent with clear entry/exit states.</li>
-    <li>Provide actionable GA4 reporting to evaluate performance.</li>
-  </ul>
-</div>
+          <!-- 02 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>02</span>
+              <h2>方向性</h2>
+            </div>
+            <div class="c-project-body">
+              <p>ビジュアルデザインは私のものではなかったため、私の仕事はデザイナーの意図を理解し、モーションによってさらに押し広げることでした。複数のオンラインFigmaセッションを通じて協働しました——彼女の決定を実装するだけでなく、それに貢献するという形で。このサイトの最も良いインタラクションは、そのやりとりから生まれました。どちらか一人が単独で作業していたものではありません。</p>
+            </div>
+          </div>
 
-<div class="c-project-section">
-  <h2>Results</h2>
-  <p>The site maintained stable performance during peak event windows while preserving the intended motion-forward experience. Motion supported navigation and pacing without compromising readability.</p>
-</div>
+          <!-- 03 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>03</span>
+              <h2>主な判断</h2>
+            </div>
+            <div class="c-project-body">
+
+              <p class="mb-10"><span class="text-lg c-label">01. マトリクステキスト</span>
+              ヒーロータイトルは現れません——到着します。ロード時、文字がマトリクス風のスクランブルで入り乱れ、実際のテキストに解決されます。各セクションタイトルがスクロールで入ってくるたびに同じエフェクトが発動します：文字がスクランブルし、正しい状態に戻ります。フェスティバルの衝突と出現というテーマを反映しています——コンテキストがぶつかりあって、新しいものが生まれる。</p>
+
+              <p class="mb-10"><span class="text-lg c-label">02. ブラーエフェクトの再考</span>
+              デザイナーはアーティストセクションにぼかした画像を求めていました。ひとつ懸念を伝えました：アーティストとその事務所は自分たちのイメージの見せ方に非常に敏感で、デフォルト状態でぼかされた顔はタレントとの摩擦を生む可能性があります。デフォルトはシャープに保ち、ホバーで明らかにする形でブラーを使うことを提案しました——インタラクションによってぼかしからシャープに変わる方向で。気に入ってもらえました。ベジェカーブのトランジションとさりげないスケールエフェクトを加え、機械的ではなく考え抜かれた印象のリビールにしました。</p>
+
+              <p class="mb-10"><span class="text-lg c-label">03. ロゴのマイクロアニメーション</span>
+              NCFのロゴは3つの幾何学的な形で構成されています。ホバー時、各形がランダムな角度に独立して回転し、わずかにランダム化されたサイズにスケールし、サイトのパレットからランダムな色に変わります。毎回のホバーが違う。ブランドを壊すことなくロゴに個性を与えます——遊び心があって予測不能、でも常にカラーシステムの中にある。モーダルが開くと、同じロゴアイコンがランダムな色でバックグラウンドに散らばって現れ、シンプルなオーバーレイに深みとエネルギーを加えます。</p>
+
+              <p><span class="text-lg c-label">04. モバイルナビゲーションの展開</span>
+              デザイナーは、全画面オーバーレイではなく高さが伸びるモバイルナビゲーションを求めていました。開く際に高さをアニメーションさせ、メニューアイテムが段階的に現れるナビを構築しました。物理的な感触があります——何かが広がるような——そしてサイト全体のタクタイル感と体験の一貫性を保ちます。</p>
+            </div>
+          </div>
+
+          <!-- 04 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>04</span>
+              <h2>デザイン</h2>
+            </div>
+            <div class="c-project-body">
+              <p>サイトはダークで、エネルギーが高く、密度があります——フェスティバルにふさわしい。ビデオヒーローがすぐにトーンを設定します。各セクション——音楽、ドローンショー、アーバンスポーツ——が同じシステムの中でそれぞれのビジュアルアイデンティティを持ちます。モーションレイヤーがその上に重なります：マトリクステキストが各セクションのエントリーに一瞬のドラマを与え、アーティストのホバーインタラクションがタクタイルさを加え、ロゴアニメーションが注目に応える常時低レベルの遊び心を作り出します。</p>
+            </div>
+          </div>
+
+          <!-- 05 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>05</span>
+              <h2>開発</h2>
+            </div>
+            <div class="c-project-body">
+              <p>Vite、Tailwind CSS、GSAP、Lenis、バニラJSで構築。マトリクステキストエフェクトはタイマーで文字をランダム化し、正しい値に一文字ずつ固定される前にランダムな文字を循環させます。ロゴホバーのランダム化は、各mouseenterイベントで定義されたパレット配列から<code>Math.random()</code>を使って回転・スケール・色の値を生成します。モーダルのバックグラウンドアイコンは同じランダム化パターンで配置・着色され、モーダルオープン時に生成されクローズ時にクリアされます。</p>
+            </div>
+          </div>
+
+          <!-- 06 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>06</span>
+              <h2>成果</h2>
+            </div>
+            <div class="c-project-body">
+              <p>サイトは2026年2月のフェスティバルに向けてローンチしました。コラボレーションモデル——デザイナーがビジュアルをリード、私がモーションをリード——は、どちらかが単独で作業しても到達できなかったインタラクションを生み出しました。ホバーブラーのリバーサルはサイトで最も特徴的なディテールの一つになり、それは一緒に問題を解決した結果から生まれました。</p>
+            </div>
+          </div>
+
+          <!-- 07 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>07</span>
+              <h2>振り返り</h2>
+            </div>
+            <div class="c-project-body">
+              <p>別のデザイナーのFigmaファイルから作業することで、自分でデザインしていた場合より一部の判断に対するコンテキストが少ない状態でした。いくつかのモーションタイミングは、ビルド中に意図した感触を探りながら進めたため、時間がかかりました。今後のコラボレーションでは、モーションを——たとえ大まかでも——デザインファイル自体に指定するよう働きかけます。ラフなタイミングのメモがあるだけで大きく変わります。</p>
+            </div>
+          </div>
 
 </div>
 
 <img class="img-fluid rounded-2xl" src="../../images/ncf_02.webp" alt="New Context Festival 2026">
 <img class="img-fluid rounded-2xl md:mt-30 mt-10" src="../../images/ncf_03.webp" alt="New Context Festival 2026">
 <img class="img-fluid rounded-2xl md:mt-30 mt-10" src="../../images/ncf_04.webp" alt="New Context Festival 2026">
-    
+
 <div>
 
 <div class="flex justify-between mt-10 md:mt-30">
        <a href="/rct/works/ncc/" class="c-project__link -previous flex gap-2 items-center">
-        <img class="img-fluid h-5 aspect-square w-auto" src="../../images/arrow.svg" alt=""> Previous 
+        <img class="img-fluid h-5 aspect-square w-auto" src="../../images/arrow.svg" alt=""> 前へ
           </a>
-         
    </div>
 
   </section>
@@ -129,7 +195,7 @@
   </footer>
 
 
- <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script> 
+ <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script>
  <script src="../../scripts.js"></script>
 
 </body>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="googlebot" content="noindex, nofollow, noarchive">
+<meta name="bingbot" content="noindex, nofollow, noarchive">
+<link rel="icon" type="image/png" href="../../../favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="../../../favicon.svg" />
+<link rel="shortcut icon" href="../../../favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="../../../apple-touch-icon.png" />
+<link rel="manifest" href="../../../site.webmanifest" />
+  <link rel="stylesheet" href="../../../style.css">
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.17/dist/lenis.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Rc Portfolio - New Context Conference</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.168.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.168.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <div class="c-nav mx-auto md:max-w-5xl w-full w-full px-6">
+    <nav class="flex items-center justify-between">
+      <a class="c-brand" href="/rct/en/">Rc.</a>
+      <ul class="hidden md:flex gap-8">
+       
+        <li><a href="/rct/en/">Home</a></li>
+         <li class="lang-switcher"><a href="/rct/">JA</a></li>
+      </ul>
+  
+    <button id="hamburger" aria-label="Open navigation" class="md:hidden flex flex-col justify-center w-8 h-8 relative z-50">
+      <span class="block w-8 bg-[var(--bg)] rounded-sm mb-2 transition-transform duration-300"></span>
+      <span class="block w-8 bg-[var(--bg)] rounded-sm mb-2 transition-all duration-300"></span>
+      <span class="block w-8 bg-[var(--bg)] rounded-sm transition-transform duration-300"></span>
+    </button>
+   
+    <nav id="mobileNav" class="mobile-nav">
+      <ul>
+     
+        <li><a href="/rct/en/" onclick="toggleNav()">Home</a></li>
+      </ul>
+    </nav>
+  
+    </nav>
+  </div>
+ 
+
+
+
+  <!--Content-->
+  <section class="c-section"> 
+  <div class="container mx-auto max-w-6xl px-6">
+   <img class="img-fluid rounded-2xl" src="../../../images/archive_01.webp" alt="New Context Conference Archive">
+    </div>
+    <div class="container mx-auto max-w-6xl px-6">
+      <div class="c-project">
+        <div class="c-project-title mb-10 mb-10">
+          <h1>New Context Conference Archive</h1>
+          <p class="c-project-role mb-10">UX Architecture, Data Migration & WordPress Build</p>
+
+          <ul class="c-tags mb-5">
+            <li>UX Architecture</li>
+            <li>WordPress / ACF</li>
+            <li>Data Migration</li>
+            <li>Bilingual</li>
+          </ul>
+
+          <p>New Context Conference has been running since 2005. By 2024 there were over 20 events across Tokyo and San Francisco with no central home — each year's site was standalone, and the history was scattered across old servers and the Wayback Machine. I designed and built the NCC archive site from scratch: one permanent home for the entire conference history, with a homepage that serves as a live entry point for upcoming events.</p>
+
+          </div>
+          <a href="https://ncc.garage.co.jp/" target="_blank" class="c-project__link flex gap-2 items-center">
+           View Site <img class="img-fluid h-5 aspect-square w-auto" src="../../../images/arrow.svg" alt="">
+          </a>
+
+          <!-- 01 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>01</span>
+              <h2>Context</h2>
+            </div>
+            <div class="c-project-body">
+              <p>New Context Conference has been running since 2005. Over 20 events across Tokyo and San Francisco, each with its own standalone site — no central home, no browsable history, no way to search speakers across years. Event data going back to the first edition existed only in scattered old server files and Wayback Machine snapshots. I designed and built the NCC archive from scratch to solve that: a permanent, bilingual home for the entire conference history, with infrastructure built to serve every future event without needing a rebuild.</p>
+            </div>
+          </div>
+
+          <!-- 02 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>02</span>
+              <h2>Direction</h2>
+            </div>
+            <div class="c-project-body">
+              <p>Each NCC event has its own strong visual identity — a distinct colour palette, imagery, and theme. The archive site needed to house all of them without competing with any of them. The solution was restraint: clean white, neutral typography, minimal colour. The site's job is to present the events clearly, not to have a personality of its own.</p>
+              <p class="mt-5">The archive page becomes a visual timeline by design — each event card uses its own key visual as the thumbnail, so 20 years of NCC identity appears as a grid. The site steps back and lets the history speak.</p>
+            </div>
+          </div>
+
+          <!-- 03 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>03</span>
+              <h2>Key Decisions</h2>
+            </div>
+            <div class="c-project-body">
+              <p>Six decisions shaped both the editorial system and the infrastructure underneath it.</p>
+
+              <p class="mb-10 mt-5"><span class="text-lg c-label">01. Dynamic Homepage</span>
+              The homepage serves two states. When an event is upcoming, it shows a countdown timer and a link to the event site — the archive becomes a launch pad. When no event is active, it shows the most recent event with a link to the archive. Both states are controlled entirely from the WordPress dashboard. The homepage is always current without touching the codebase.</p>
+
+              <p class="mb-10"><span class="text-lg c-label">02. Recovering 20 Years of History</span>
+              Event data going back to 2005 didn't exist in any organised form. I scraped speaker names, agenda details, themes, and photos from old server files and the Wayback Machine, then structured and migrated everything into the CMS. Every event from the first NCC through to the present is now searchable and browsable in a consistent format.</p>
+
+              <p class="mb-10"><span class="text-lg c-label">03. Speakers as a Custom Post Type</span>
+              Speakers are their own post type, independent of any single event. A speaker who has appeared at multiple NCC events has one profile linking to every edition they've participated in. From the dashboard it's now possible to search the full speaker history across 20 years of the conference — something that wasn't possible before.</p>
+
+              <p class="mb-10"><span class="text-lg c-label">04. Agenda as Repeatable Rows</span>
+              The agenda builder uses ACF repeatable row fields — time, session title, description, speakers. Anyone can build a complete event agenda from the dashboard without touching code. Adding a session is adding a row.</p>
+
+              <p class="mb-10"><span class="text-lg c-label">05. Gallery as Drag and Drop</span>
+              Event photos are added via a drag-and-drop upload area in the dashboard. Drop the images in, save, done. No file management, no custom markup required.</p>
+
+              <p><span class="text-lg c-label">06. Custom Blocks for Event Pages</span>
+              Each archived event page — agenda, gallery, speakers — is built using custom ACF blocks. The structure is consistent across all events but the content is unique to each. New event pages can be created and populated entirely from the dashboard.</p>
+            </div>
+          </div>
+
+          <!-- 04 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>04</span>
+              <h2>Design</h2>
+            </div>
+            <div class="c-project-body">
+              <p>The visual system is deliberately plain — white backgrounds, a single neutral typeface, restrained spacing. The archive page uses each event's key visual as the card thumbnail, turning the page into a timeline of NCC's 20-year visual history. The design steps back entirely and lets the content carry it.</p>
+              <p class="mt-5">The homepage manages two very different states — live event energy with countdown and CTA, and quiet archival presence when no event is active — within the same layout, so the transition between states feels natural rather than jarring.</p>
+            </div>
+          </div>
+
+          <!-- 05 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>05</span>
+              <h2>Build</h2>
+            </div>
+            <div class="c-project-body">
+              <p>Custom WordPress theme with ACF, built on the same foundation as DG Incubation — custom post types, structured field groups, Polylang for bilingual JP/EN. The speaker post type has its own taxonomy linking profiles to events across years. The agenda and gallery are built with custom ACF blocks, making event pages reusable and editor-friendly. The data migration was a combination of manual entry and semi-automated parsing of Wayback Machine snapshots and old server files.</p>
+            </div>
+          </div>
+
+          <!-- 06 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>06</span>
+              <h2>Outcome</h2>
+            </div>
+            <div class="c-project-body">
+              <p>Twenty years of NCC history now lives in one place, searchable and browsable in both Japanese and English. The editorial team can create and publish a complete event archive page — agenda, speakers, gallery — without any design or development involvement. The homepage automatically reflects whether an event is coming or has passed. The infrastructure will serve every future NCC event without requiring a rebuild.</p>
+            </div>
+          </div>
+
+          <!-- 07 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>07</span>
+              <h2>Reflection</h2>
+            </div>
+            <div class="c-project-body">
+              <p>The data recovery process was the most time-consuming part of the project and I underestimated it significantly. Wayback Machine snapshots are inconsistent — some events had almost nothing recoverable, others were nearly complete. A proper audit of what actually exists before committing to scope would have made the process smoother. For future archival projects I'd treat the discovery phase as its own deliverable before any build work begins.</p>
+            </div>
+          </div>
+
+</div>
+
+<img class="img-fluid rounded-2xl" src="../../../images/archive_02.webp" alt="New Context Conference Archive">
+<img class="img-fluid rounded-2xl md:mt-30 mt-10" src="../../../images/archive_03.webp" alt="New Context Conference Archive">
+<img class="img-fluid rounded-2xl md:mt-30 mt-10" src="../../../images/archive_04.webp" alt="New Context Conference Archive">
+    
+<div>
+
+<div class="flex justify-between mt-10 md:mt-30">
+       <a href="/rct/works/nccsummer/" class="c-project__link -previous flex gap-2 items-center">
+        <img class="img-fluid h-5 aspect-square w-auto" src="../../../images/arrow.svg" alt=""> Previous 
+          </a>
+          <a href="/rct/works/ncf/" class="c-project__link flex gap-2 items-center">Next <img class="img-fluid h-5 aspect-square w-auto" src="../../../images/arrow.svg" alt="">
+           </a>
+   </div>
+
+  </section>
+
+
+
+
+ <!-- footer-->
+  <footer class="c-footer">
+  <section class="c-section__footer">
+<img class="img-fluid  w-auto" src="../../../images/footer.webp" alt="Rc. Portfolio">
+  </section>
+  </footer>
+
+
+ <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script> 
+ <script src="../../../scripts.js"></script>
+
+</body>
+</html>

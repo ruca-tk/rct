@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -33,31 +33,32 @@
     <nav class="flex items-center justify-between">
       <a class="c-brand" href="../../">Rc.</a>
       <ul class="hidden md:flex gap-8">
-       
-        <li><a href="../../">Home</a></li>
+
+        <li><a href="../../">ホーム</a></li>
+        <li class="lang-switcher"><a href="../../en/">EN</a></li>
       </ul>
-  
-    <button id="hamburger" aria-label="Open navigation" class="md:hidden flex flex-col justify-center w-8 h-8 relative z-50">
+
+    <button id="hamburger" aria-label="ナビゲーションを開く" class="md:hidden flex flex-col justify-center w-8 h-8 relative z-50">
       <span class="block w-8 bg-[var(--bg)] rounded-sm mb-2 transition-transform duration-300"></span>
       <span class="block w-8 bg-[var(--bg)] rounded-sm mb-2 transition-all duration-300"></span>
       <span class="block w-8 bg-[var(--bg)] rounded-sm transition-transform duration-300"></span>
     </button>
-   
+
     <nav id="mobileNav" class="mobile-nav">
       <ul>
-     
-        <li><a href="../../" onclick="toggleNav()">Home</a></li>
+
+        <li><a href="../../" onclick="toggleNav()">ホーム</a></li>
       </ul>
     </nav>
-  
+
     </nav>
   </div>
- 
+
 
 
 
   <!--Content-->
-  <section class="c-section"> 
+  <section class="c-section">
   <div class="container mx-auto max-w-6xl px-6">
    <img class="img-fluid rounded-2xl" src="../../images/akiya_01.webp" alt="DG Camp Akiya">
     </div>
@@ -65,66 +66,128 @@
       <div class="c-project">
         <div class="c-project-title mb-10">
           <h1>DG Camp Akiya</h1>
-          <p class="c-project-role mb-10">Web Design, Visual Direction & Front-End Development</p>
-       
-           <p>DG Camp Akiya introduces a coastal co-working and community space. Excluding the logo, I led the web design, visual direction, drone footage planning, and full front-end implementation, translating the atmosphere of the physical location into a cohesive digital experience.</p>
-      
+          <p class="c-project-role mb-10">クリエイティブディレクション & フロントエンド開発</p>
+
+          <ul class="c-tags mb-5">
+            <li>クリエイティブディレクション</li>
+            <li>コピーライティング</li>
+            <li>モーションデザイン</li>
+            <li>フロントエンド開発</li>
+          </ul>
+
+          <p>DG Camp Akiyaは横須賀にオープンしたインキュベーションセンター。Digital Garage関連企業やアクセラレータースタートアップ、グローバルパートナーが集まり、コワーキング・イベント・交流の場として機能しています。ロゴ、いくつかの資料、そしてオープンなブリーフを受け取り、コンセプト・タグライン・撮影ディレクション・ドローン映像・モーション言語まで、すべてをそこから作り上げました。</p>
+
           </div>
-          <a href="https://garage.co.jp/dgcampakiya/" target="_blank" class="c-project__link flex gap-2 items-center">
-           View Site <img class="img-fluid h-5 aspect-square w-auto" src="../../images/arrow.svg" alt="">
+          <a href="https://www.garage.co.jp/dgcampakiya/" target="_blank" class="c-project__link flex gap-2 items-center">
+           サイトを見る <img class="img-fluid h-5 aspect-square w-auto" src="../../images/arrow.svg" alt="">
           </a>
-    
 
-          <div class="c-project-section">
-            <h2>Scope</h2>
-            <ul class="c-list">
-              <li>UI/UX design</li>
-              <li>Visual system design</li>
-              <li>Drone footage direction and shot planning</li>
-              <li>Image planning and coordination</li>
-              <li>Front-end architecture (HTML / CSS / JavaScript)</li>
-              <li>Animation design and implementation</li>
-              <li>Responsive development</li>
-            </ul>
+          <!-- 01 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>01</span>
+              <h2>背景</h2>
+            </div>
+            <div class="c-project-body">
+              <p>DG Camp Akiyaは横須賀にオープンしたインキュベーションセンターです。Digital Garage関連企業やアクセラレータースタートアップ、グローバルパートナーが集まり、コワーキング・イベント・交流を行うためのフルリノベーションスペース。プロジェクトはミーティングから始まりました。スペースを案内してもらい、ロゴと資料を渡されました。そこから先は、コンセプト・ナラティブ・サイト全体の表現をゼロから定義する自由がありました。国会議員、横須賀市長、渋谷区長からのメッセージが届いた、注目度の高いローンチでした。</p>
+            </div>
           </div>
 
-<div class="c-project-section">
-  <h2>Challenges</h2>
-  <ul class="c-list"> 
-    <li>Conveying spatial atmosphere through digital presentation</li>
-    <li>Aligning aerial footage with the site's visual structure</li>
-    <li>Balancing immersive visuals with informational clarity</li>
-    <li>Maintaining performance despite media-heavy content</li>
-  </ul>
-</div>
+          <!-- 02 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>02</span>
+              <h2>方向性</h2>
+            </div>
+            <div class="c-project-body">
+              <p>横須賀は海沿いに位置しています。このスペースはグローバルな視野を持ちながら、ローカルな拠点で働くスタートアップのために設計されています。そのテンション——ローカルな根と、グローバルな広がり——がクリエイティブの軸になりました。タグラインを書きました：think globally, work locally。そこからすべてが続きました。</p>
+              <p class="mt-5">ビジュアル言語には、動きと生命感が必要でした。スペースが育てるスタートアップのエネルギーと成長を体現するもの。スクロールに合わせて要素がスケールするアニメーションは、モメンタムをテーマにしたスペースに合っていると感じました。いつか使いたいと思っていたリファレンスがありました。このプロジェクトがそれでした。</p>
+            </div>
+          </div>
 
-<div class="c-project-section">
-  <h2>Approach</h2>
-  <ul class="c-list">
-    <li>Structured the site to guide users through concept, location, and space</li>
-    <li>Directed drone shots to capture scale, landscape, and architectural context</li>
-    <li>Designed layouts to integrate video seamlessly within the narrative</li>
-    <li>Optimized media delivery to preserve performance across devices</li>
-</div>
+          <!-- 03 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>03</span>
+              <h2>主な判断</h2>
+            </div>
+            <div class="c-project-body">
+              <p>ブリーフを超えて、サイトを形づくった5つの判断があります。</p>
 
-<div class="c-project-section">
-  <h2>Results</h2>
-  <p>The site delivers a cohesive digital representation of the physical environment.
-    Drone footage reinforces the sense of scale and location. Visual structure and motion support an immersive yet clear experience. The implementation remains stable and performant despite media-heavy assets.</p>
-</div>
+              <p class="mb-10 mt-5"><span class="text-lg c-label">01. ドローンショットのコンセプト</span>
+              ドローンが会議室の内側から始まり、海の上へと引いていく映像をディレクションしました。単なるエスタブリッシングショットではなく、タグラインをビジュアル化したものです。この部屋で働くスタートアップが、海を見渡し、日本を超えたマーケットとつながっている。コンセプトと映像は同時に書かれました。どちらも即座に承認されました。</p>
 
-</div>  
+              <p class="mb-10"><span class="text-lg c-label">02. ブリーフの拡張</span>
+              スコープに対するクリエイティブな自由があったため、ストーリーを完結させるために必要なものを追加しました。ビジョンを伝えるコンセプトセクション、施設がDigital Garageのグローバルインキュベーションネットワーク内でどう位置づけられるかを説明するAboutセクション、そして今後の計画を紹介するトピックスセクション。各イニシアティブの詳細をチームとともに整理し、ビジュアルを収集して、3枚のカードにまとめました：サイバーセキュリティハブ、横須賀市との連携、坂本龍一アーティスト・イン・レジデンス・スタジオ。</p>
+
+              <p class="mb-10"><span class="text-lg c-label">03. ギャラリーにエディトリアルラベルを</span>
+              物件写真をニュートラルなグリッドで並べるのではなく、Dream・Create・Colab・Inspireの4つのエディトリアルカテゴリに整理し、それぞれに独自の画像セットを用意しました。フォトグラファーに対してセクションごとにブリーフィングを行いました。このラベル構造により、ギャラリーに「このスペースが何のためにあるか」を体現するナラティブの流れが生まれました。</p>
+
+              <p class="mb-10"><span class="text-lg c-label">04. 神奈川の波のリファレンス</span>
+              アクセスセクションに、横須賀が属する神奈川の波の芸術的伝統を参照したビジュアル処理を加えました。装飾のためではなく、サイトをローカルに根ざすための静かな文化的ノードです。</p>
+
+              <p><span class="text-lg c-label">05. 坂本スタジオの表現</span>
+              アーティスト・イン・レジデンス・スタジオは、坂本龍一のレガシー楽器とスタジオ機材を中心に構築されています。コンテンツは提供されました。提示するにあたっては丁寧な扱いが求められました——そのレガシーを尊重するほど重みを持たせながら、施設自体を霞ませないよう抑制すること。</p>
+            </div>
+          </div>
+
+          <!-- 04 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>04</span>
+              <h2>デザイン</h2>
+            </div>
+            <div class="c-project-body">
+              <p>サイトはドローン映像のヒーローとタグラインから始まります——海を見る前に説明は必要ありません。ギャラリーがすぐに続き、現地でディレクションした写真がスペース自体を語ります。ビジョン・ハブ・スタジオのセクションが段階的にストーリーを積み上げます：このスペースが何であるか、グローバルネットワーク内でどう位置づけられるか、そして何が文化的に特徴的かを。</p>
+              <p class="mt-5">スクロールに合わせて画像とテキストが拡大・縮小するモーション言語がサイト全体を貫いており、ページにエネルギーの感覚を与えます。各セクションがスクロールとともに現れる、ダイナミックで表現力豊かな構造です。</p>
+            </div>
+          </div>
+
+          <!-- 05 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>05</span>
+              <h2>開発</h2>
+            </div>
+            <div class="c-project-body">
+              <p>Vite、Tailwind CSS、GSAP、Lenis、バニラJSで構築——モーション重視のシングルページサイトで使い慣れたスタックです。GSAPがスクロールに連動したスケールアニメーション全体を担当しています。Lenisがスクロールの挙動を滑らかに保ちます。フレームワークのオーバーヘッドなし——すべてのインタラクションを完全にコントロールしています。</p>
+            </div>
+          </div>
+
+          <!-- 06 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>06</span>
+              <h2>成果</h2>
+            </div>
+            <div class="c-project-body">
+              <p>サイトは施設のオープニングと同時にローンチし、主要な告知の場となりました。ドローン映像とタグラインは修正なしで採用されました。元のブリーフには含まれていなかったコンセプト・About・トピックスの各セクションが、施設を外部に伝えるコミュニケーションの中心的な要素になりました。</p>
+            </div>
+          </div>
+
+          <!-- 07 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>07</span>
+              <h2>振り返り</h2>
+            </div>
+            <div class="c-project-body">
+              <p>使用したモーションデザインのリファレンスは、適切なプロジェクトのために取っておいたものです。スタイルはプロジェクトよりも先に決まっていました。振り返ってみると、逆のアプローチが正解だったと思います——コンテンツがモーション言語を定義するべきであり、参照を先に持ち込むべきではない。スケールアニメーションはここでうまく機能していますが、それは半分は偶然の一致でした。</p>
+            </div>
+          </div>
+
+</div>
 
 <img class="img-fluid rounded-2xl" src="../../images/akiya_02.webp" alt="DG Camp Akiya">
 <img class="img-fluid rounded-2xl md:mt-30 mt-10" src="../../images/akiya_03.webp" alt="DG Camp Akiya">
-    
+
 <div>
 
 <div class="flex justify-between mt-10 md:mt-30">
        <a href="/rct/works/dgi/" class="c-project__link -previous flex gap-2 items-center">
-        <img class="img-fluid h-5 aspect-square w-auto" src="../../images/arrow.svg" alt=""> Previous 
+        <img class="img-fluid h-5 aspect-square w-auto" src="../../images/arrow.svg" alt=""> 前へ
           </a>
-          <a href="/rct/works/nccsummer/" class="c-project__link flex gap-2 items-center">Next <img class="img-fluid h-5 aspect-square w-auto" src="../../images/arrow.svg" alt="">
+          <a href="/rct/works/nccsummer/" class="c-project__link flex gap-2 items-center">次へ <img class="img-fluid h-5 aspect-square w-auto" src="../../images/arrow.svg" alt="">
            </a>
    </div>
 
@@ -141,7 +204,7 @@
   </footer>
 
 
- <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script> 
+ <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script>
  <script src="../../scripts.js"></script>
 
 </body>

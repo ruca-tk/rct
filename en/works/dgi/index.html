@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="googlebot" content="noindex, nofollow, noarchive">
+<meta name="bingbot" content="noindex, nofollow, noarchive">
+<link rel="icon" type="image/png" href="../../../favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="../../../favicon.svg" />
+<link rel="shortcut icon" href="../../../favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="../../../apple-touch-icon.png" />
+<link rel="manifest" href="../../../site.webmanifest" />
+  <link rel="stylesheet" href="../../../style.css">
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.17/dist/lenis.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Rc Portfolio - DG Incubation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.168.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.168.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <div class="c-nav mx-auto md:max-w-5xl w-full w-full px-6">
+    <nav class="flex items-center justify-between">
+      <a class="c-brand" href="/rct/en/">Rc.</a>
+      <ul class="hidden md:flex gap-8">
+       
+       <li><a href="/rct/en/">Home</a></li>
+         <li class="lang-switcher"><a href="/rct/">JA</a></li>
+      </ul>
+  
+    <button id="hamburger" aria-label="Open navigation" class="md:hidden flex flex-col justify-center w-8 h-8 relative z-50">
+      <span class="block w-8 bg-[var(--bg)] rounded-sm mb-2 transition-transform duration-300"></span>
+      <span class="block w-8 bg-[var(--bg)] rounded-sm mb-2 transition-all duration-300"></span>
+      <span class="block w-8 bg-[var(--bg)] rounded-sm transition-transform duration-300"></span>
+    </button>
+   
+    <nav id="mobileNav" class="mobile-nav">
+      <ul>
+     
+        <li><a href="/rct/en/" onclick="toggleNav()">Home</a></li>
+      </ul>
+    </nav>
+  
+    </nav>
+  </div>
+ 
+
+
+
+  <!--Content-->
+  <section class="c-section"> 
+  <div class="container mx-auto max-w-6xl px-6">
+   <img class="img-fluid rounded-2xl" src="../../../images/dgi_01.webp" alt="DG Incubation">
+    </div>
+    <div class="container mx-auto max-w-6xl px-6">
+      <div class="c-project">
+        <div class="c-project-title mb-10">
+          <h1>DG Incubation</h1>
+          <p class="c-project-role mb-10">Site Renewal — UX Architecture & WordPress Build</p>
+
+          <ul class="c-tags mb-5">
+            <li>Site Renewal</li>
+            <li>UX Architecture</li>
+            <li>WordPress / ACF</li>
+            <li>Bilingual</li>
+          </ul>
+
+          <p>DG Incubation is the incubation and fund management arm of Digital Garage. The existing site was a single Japanese-only landing page — dark blue, text-heavy, with no CMS and no English. The ask was simple: renew it. No formal brief, just a meeting and a look at the old site. I rebuilt it from the ground up.</p>
+
+          </div>
+          <a href="https://dgincubation.com/" target="_blank" class="c-project__link flex gap-2 items-center">
+           View Site <img class="img-fluid h-5 aspect-square w-auto" src="../../../images/arrow.svg" alt="">
+          </a>
+
+          <!-- 01 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>01</span>
+              <h2>Context</h2>
+            </div>
+            <div class="c-project-body">
+              <p>DG Incubation is the incubation and fund management arm of Digital Garage. The existing site was a single Japanese-only landing page — dark blue, heavy on text, built around a dense fund structure diagram. No CMS, no navigation to speak of, no English version. It read like an internal document. The ask was a renewal: no brief document, just a meeting where the team showed me the old site and told me they wanted something new.</p>
+            </div>
+          </div>
+
+          <!-- 02 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>02</span>
+              <h2>Direction</h2>
+            </div>
+            <div class="c-project-body">
+              <p>An incubation company's website has one job: signal credibility to founders and investors. I moved to clean white with corporate blue as the accent — restrained, professional, built to last. No dark backgrounds, no heavy gradients, nothing that would date in two years. The visual system is deliberately quiet so the content can do the work.</p>
+              <p class="mt-5">The hero uses a video I sourced to bring energy to what could easily have been a static, corporate page. Everything else gets out of the way.</p>
+            </div>
+          </div>
+
+          <!-- 03 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>03</span>
+              <h2>Key Decisions</h2>
+            </div>
+            <div class="c-project-body">
+              <p>The gap between the old site and what was needed was large enough that four decisions shaped the entire rebuild.</p>
+
+              <p class="mb-10 mt-5"><span class="text-lg c-label">01. LP to Multi-Page Site</span>
+              The old site crammed everything onto one page — about, fund structure, company profile — with no navigation between sections. Founders researching a fund and investors checking the portfolio have different needs. Splitting into dedicated pages for each fund, portfolio, news, team, and company gave every audience a clear path without forcing them through everything else.</p>
+
+              <p class="mb-10"><span class="text-lg c-label">02. Bilingual from the Ground Up</span>
+              The old site was Japanese only. DG Incubation invests in global startups and works with international partners. An English version wasn't optional — it was overdue. I built the site with Polylang so both languages share the same structure and can be maintained independently without touching code.</p>
+
+              <p class="mb-10"><span class="text-lg c-label">03. CMS for Non-Designers</span>
+              The team needed to update news, team members, and portfolio entries themselves. I built a custom WordPress theme with ACF — custom post types for each content area with structured field groups. Adding a news article or a new team member requires no design knowledge. The site stays current without depending on a developer for every update.</p>
+
+              <p><span class="text-lg c-label">04. Portfolio Page Reference</span>
+              The brief specifically referenced the DG Ventures portfolio design as the target. I followed that structure — a filterable grid of portfolio companies — and added one-line taglines to each entry describing what the company does. The taglines give context without requiring the visitor to click through to find out if a company is relevant to them.</p>
+            </div>
+          </div>
+
+          <!-- 04 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>04</span>
+              <h2>Design</h2>
+            </div>
+            <div class="c-project-body">
+              <p>The visual system is deliberately quiet. White backgrounds, blue accents, clean sans-serif typography. Nothing that pulls attention away from the content. The fund pages each have their own identity within the same system — consistent layout, distinct enough to feel like separate products. The video hero on the homepage adds motion without gimmick: it runs silently in the background, gives the page life, and doesn't fight the text above it.</p>
+              <p class="mt-5">The goal throughout was a site that looks appropriate in five years as much as it does today.</p>
+            </div>
+          </div>
+
+          <!-- 05 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>05</span>
+              <h2>Build</h2>
+            </div>
+            <div class="c-project-body">
+              <p>Custom WordPress theme built with ACF. Three custom post types — news, team, and portfolio — each with structured field groups so the team can update content without touching code. Bilingual throughout using Polylang, with separate content trees for JP and EN that share the same templates. The frontend uses standard HTML, CSS, and vanilla JS — no framework overhead for a site that doesn't need it.</p>
+            </div>
+          </div>
+
+          <!-- 06 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>06</span>
+              <h2>Outcome</h2>
+            </div>
+            <div class="c-project-body">
+              <p>The site went from a Japanese-only single-page document to a full bilingual, multi-page WordPress site the team maintains themselves. It's live, current, and built to last. The content structure scales — new funds, new team members, and new portfolio entries can all be added without a redesign.</p>
+            </div>
+          </div>
+
+          <!-- 07 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>07</span>
+              <h2>Reflection</h2>
+            </div>
+            <div class="c-project-body">
+              <p>The fund structure diagram from the old site carried real information — it showed how the different funds relate to each other across investment stages. I removed it in the redesign because it felt visually heavy, but I didn't replace it with anything. In hindsight I should have found a cleaner way to communicate that structure rather than cutting it entirely. Some of the complexity was worth keeping.</p>
+            </div>
+          </div>
+
+</div>  
+
+<img class="img-fluid rounded-2xl" src="../../../images/dgi_02.webp" alt="DG Incubation">
+<img class="img-fluid rounded-2xl md:mt-30 mt-10" src="../../../images/dgi_03.webp" alt="DG Incubation">
+    
+<div>
+
+<div class="flex justify-between mt-10 md:mt-30">
+       <a href="/rct/works/hashirisf/" class="c-project__link -previous flex gap-2 items-center">
+        <img class="img-fluid h-5 aspect-square w-auto" src="../../../images/arrow.svg" alt=""> Previous 
+          </a>
+          <a href="/rct/works/dgakiya/" class="c-project__link flex gap-2 items-center">Next <img class="img-fluid h-5 aspect-square w-auto" src="../../../images/arrow.svg" alt="">
+           </a>
+   </div>
+
+  </section>
+
+
+
+
+ <!-- footer-->
+  <footer class="c-footer">
+  <section class="c-section__footer">
+<img class="img-fluid  w-auto" src="../../../images/footer.webp" alt="Rc. Portfolio">
+  </section>
+  </footer>
+
+
+ <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script> 
+ <script src="../../../scripts.js"></script>
+
+</body>
+</html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -33,31 +33,33 @@
     <nav class="flex items-center justify-between">
       <a class="c-brand" href="../../">Rc.</a>
       <ul class="hidden md:flex gap-8">
-       
-        <li><a href="../../">Home</a></li>
+
+        <li><a href="../../">ホーム</a></li>
       </ul>
-  
-    <button id="hamburger" aria-label="Open navigation" class="md:hidden flex flex-col justify-center w-8 h-8 relative z-50">
+
+    <button id="hamburger" aria-label="ナビゲーションを開く" class="md:hidden flex flex-col justify-center w-8 h-8 relative z-50">
       <span class="block w-8 bg-[var(--bg)] rounded-sm mb-2 transition-transform duration-300"></span>
       <span class="block w-8 bg-[var(--bg)] rounded-sm mb-2 transition-all duration-300"></span>
       <span class="block w-8 bg-[var(--bg)] rounded-sm transition-transform duration-300"></span>
     </button>
-   
+
     <nav id="mobileNav" class="mobile-nav">
       <ul>
-     
-        <li><a href="../../" onclick="toggleNav()">Home</a></li>
+
+        <li><a href="../../" onclick="toggleNav()">ホーム</a></li>
+        <li class="lang-switcher"><a href="../../en/">EN</a></li>
+
       </ul>
     </nav>
-  
+
     </nav>
   </div>
- 
+
 
 
 
   <!--Content-->
-  <section class="c-section"> 
+  <section class="c-section">
   <div class="container mx-auto max-w-6xl px-6">
    <img class="img-fluid rounded-2xl" src="../../images/nccsummer_01.webp" alt="New Context Summer 2025">
     </div>
@@ -65,55 +67,108 @@
       <div class="c-project">
         <div class="c-project-title mb-10">
           <h1>NCC Summer 2025</h1>
-          <p class="c-project-role mb-10">UI/UX Design & Front-End Development</p>
-       
-           <p>NCC 2025 TK Summer is a dedicated event microsite built to support a single conference edition. Excluding the provided key visual and logo, I led the design and full front-end implementation, delivering a motion-driven, responsive HTML site.</p>
-      
+          <p class="c-project-role mb-10">イベントサイト — ビジュアルディレクション & フロントエンド開発</p>
+
+          <ul class="c-tags mb-5">
+            <li>イベントサイト</li>
+            <li>ビジュアルディレクション</li>
+            <li>AI画像生成</li>
+            <li>フロントエンド開発</li>
+          </ul>
+
+          <p>New Context ConferenceはDigital Garageの年次テクノロジーカンファレンスで、2005年から開催されています。2019年からすべてのNCCイベントサイトをデザインしています——東京とサンフランシスコで年間最大3回。ブリーフはいつも同じ：テーマのタイトル。色、イメージ、ビジュアルアイデンティティ、レイアウト——すべてを毎回ゼロから作ります。</p>
+
           </div>
           <a href="https://ncc.garage.co.jp/2025_tk_summer/" target="_blank" class="c-project__link flex gap-2 items-center">
-           View Site <img class="img-fluid h-5 aspect-square w-auto" src="../../images/arrow.svg" alt="">
+           サイトを見る <img class="img-fluid h-5 aspect-square w-auto" src="../../images/arrow.svg" alt="">
           </a>
-    
 
-<div class="c-project-section">
-  <h2>Scope</h2>
-  <ul class="c-list">
-  	<li>UI/UX design</li>
-	<li>Layout and visual system design</li>
-	<li>Front-end architecture (HTML / CSS / JavaScript)</li>
-	<li>Animation design and implementation</li>
-	<li>Responsive development</li>
-	<li>Performance optimization</li>
-  </ul>
-</div>
+          <!-- 01 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>01</span>
+              <h2>背景</h2>
+            </div>
+            <div class="c-project-body">
+              <p>New Context ConferenceはDigital Garageの年次テクノロジーカンファレンスです。2019年からすべてのNCCイベントサイトをデザインしています——東京とサンフランシスコで年間最大3回。毎年同じ始まり：テーマタイトル、ロゴ、キービジュアル。それ以外は自分で定義します。この回のテーマは「Zen AI and Blockchain」でした。</p>
+            </div>
+          </div>
 
-<div class="c-project-section">
-  <h2>Challenges</h2>
-  <ul class="c-list">
-  	<li>Translating an externally provided key visual into a cohesive web system</li>
-	<li>Designing around fixed brand assets while maintaining consistency</li>
-	<li>Balancing motion with performance</li>
-	<li>Ensuring clarity across content-heavy sections</li>
+          <!-- 02 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>02</span>
+              <h2>方向性</h2>
+            </div>
+            <div class="c-project-body">
+              <p>このエディションのキービジュアルは、宇宙のポータルの端に座って瞑想している人物を描いていました——深宇宙のブルーに対して温かみのあるアンバーとダスティーローズ。それをすべての基盤にしました。カラーパレットはイラストから直接抽出し、そのアンビエントで瞑想的なトーンがサイト全体のレジスターを形づくりました：騒がしいテックカンファレンスではなく、より考察的で哲学的なもの。</p>
+              <p class="mt-5">提供されたキービジュアルを超えてビジュアルの一貫性を保つため、同じ雰囲気に合わせてAIを使ったサポート画像を生成しました——ブレイクセクションと登録CTAに使用しています。上から下まで一つの世界として感じられるサイトを目指しました。</p>
+            </div>
+          </div>
 
-  </ul>
-</div>
+          <!-- 03 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>03</span>
+              <h2>主な判断</h2>
+            </div>
+            <div class="c-project-body">
 
-<div class="c-project-section">
-  <h2>Approach</h2>
-  <ul class="c-list">
-    <li>Designed a layout system aligned with the provided visual identity</li>
-    <li>Built a fully custom HTML structure without CMS dependency</li>
-    <li>Implemented motion using lightweight, performance-conscious animation</li>
-    <li>Optimized for smooth rendering across desktop and mobile</li>
+              <p class="mb-10"><span class="text-lg c-label">01. キービジュアルからパレットを引く</span>
+              カラーシステムを独自に設計するのではなく、提供されたイラストから直接パレットを引き出しました——温かみのあるアンバー、ダスティーローズ、深いブルーグレー。こうすることでサイトとイベントビジュアルが同じ感情的なレジスターに収まります。ポスターを見て次にサイトを訪れたとき、同じ世界にいると感じられます。</p>
 
-  </ul>
-</div>
+              <p class="mb-10"><span class="text-lg c-label">02. AIによるサポート画像生成</span>
+              キービジュアルが確立した特定の美的感覚は、ストックフォトではマッチできませんでした。ブレイクセクションとフッターCTAを埋めるため、イラストのトーンに忠実なままAIで追加画像を生成しました。このアプローチにより、視覚的に不釣り合いなフィラーを持ち込まずにページ全体の一貫性を維持します。</p>
 
-<div class="c-project-section">
-  <h2>Results</h2>
-  <p>The site delivers a cohesive experience aligned with the event's visual identity.
-    Animation enhances engagement without compromising performance. The implementation remains lightweight and stable across devices. The structure allows for fast deployment and straightforward updates.</p>
-</div>
+              <p><span class="text-lg c-label">03. ダイナミックなスピーカー読み込み</span>
+              NCCのスピーカーラインナップは頻繁に変わります——名前の確定が遅く、順番が変わり、プロフィールがイベント直前まで更新されます。スピーカーデータをJavaScriptオブジェクトに移動し、HTMLにハードコードするのではなく動的にカードをレンダリングするようにしました。スピーカーの追加や並び替えがデータファイルの1行変更で済みます。今年から導入した仕組みで、今後のすべてのNCCエディションに引き継ぎます。</p>
+            </div>
+          </div>
+
+          <!-- 04 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>04</span>
+              <h2>デザイン</h2>
+            </div>
+            <div class="c-project-body">
+              <p>サイトはダークで没入感があります——深い背景、温かみのあるアクセントカラー、ゆったりとしたスペーシング。キービジュアルがヒーローを錨にし、登録セクションでも再登場し、開いたのと同じビジュアルウェイトでページを締めます。スピーカーグリッド、アジェンダ、ホストセクションは全体を通じて一貫したカードシステムに従っています。</p>
+              <p class="mt-5">バイリンガル構造——日本語メイン、英語も対応——はカンファレンスの国内フォーカスを反映しながら、国際的なオーディエンスにもアクセスできるようにしています。</p>
+            </div>
+          </div>
+
+          <!-- 05 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>05</span>
+              <h2>開発</h2>
+            </div>
+            <div class="c-project-body">
+              <p>Vite、Tailwind CSS、GSAP、Lenis、バニラJS——すべてのNCCイベントサイトで使うのと同じスタック。スピーカーセクションはデータ駆動：各スピーカーは名前、肩書、画像パス、セッションデータを含むJavaScriptオブジェクトとして定義され、ロード時にDOMにレンダリングされます。ラインナップの更新にHTMLへの変更は不要です。</p>
+            </div>
+          </div>
+
+          <!-- 06 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>06</span>
+              <h2>成果</h2>
+            </div>
+            <div class="c-project-body">
+              <p>サイトは2025年6月のイベントに向けてローンチし、2019年から発展させてきたNCCのビジュアル言語を継続しています——各エディションがテーマから生まれた独自のアイデンティティを持ちながら、認識できるシリーズの一部であり続けます。ダイナミックなスピーカーシステムは、今後のすべてのNCCサイトの管理を高速化する構造的な改善です。</p>
+            </div>
+          </div>
+
+          <!-- 07 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>07</span>
+              <h2>振り返り</h2>
+            </div>
+            <div class="c-project-body">
+              <p>AI画像生成はサポート画像としてうまく機能しましたが、生成された画像のいくつかは提供されたキービジュアルとテクスチャが微妙に一致していませんでした——近いけれど完全ではない。次回は近似するのを繰り返すのではなく、最初から精度の高いプロンプトを確立します。明確なブリーフほど一貫した結果を生みます。</p>
+            </div>
+          </div>
 
 </div>
 
@@ -121,14 +176,14 @@
 <img class="img-fluid rounded-2xl md:mt-30 mt-10" src="../../images/nccsummer_03.webp" alt="New Context Summer 2025">
 
 
-    
+
 <div>
 
 <div class="flex justify-between mt-10 md:mt-30">
        <a href="/rct/works/dgakiya/" class="c-project__link -previous flex gap-2 items-center">
-        <img class="img-fluid h-5 aspect-square w-auto" src="../../images/arrow.svg" alt=""> Previous 
+        <img class="img-fluid h-5 aspect-square w-auto" src="../../images/arrow.svg" alt=""> 前へ
           </a>
-          <a href="/rct/works/ncc/" class="c-project__link flex gap-2 items-center">Next <img class="img-fluid h-5 aspect-square w-auto" src="../../images/arrow.svg" alt="">
+          <a href="/rct/works/ncc/" class="c-project__link flex gap-2 items-center">次へ <img class="img-fluid h-5 aspect-square w-auto" src="../../images/arrow.svg" alt="">
            </a>
    </div>
 
@@ -145,7 +200,7 @@
   </footer>
 
 
- <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script> 
+ <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script>
  <script src="../../scripts.js"></script>
 
 </body>

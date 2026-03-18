@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -33,100 +33,165 @@
     <nav class="flex items-center justify-between">
       <a class="c-brand" href="../../">Rc.</a>
       <ul class="hidden md:flex gap-8">
-       
-        <li><a href="../../">Home</a></li>
+
+        <li><a href="../../">ホーム</a></li>
+        <li class="lang-switcher"><a href="../../en/">EN</a></li>
       </ul>
-  
-    <button id="hamburger" aria-label="Open navigation" class="md:hidden flex flex-col justify-center w-8 h-8 relative z-50">
+
+    <button id="hamburger" aria-label="ナビゲーションを開く" class="md:hidden flex flex-col justify-center w-8 h-8 relative z-50">
       <span class="block w-8 bg-[var(--bg)] rounded-sm mb-2 transition-transform duration-300"></span>
       <span class="block w-8 bg-[var(--bg)] rounded-sm mb-2 transition-all duration-300"></span>
       <span class="block w-8 bg-[var(--bg)] rounded-sm transition-transform duration-300"></span>
     </button>
-   
+
     <nav id="mobileNav" class="mobile-nav">
       <ul>
-     
-        <li><a href="../../" onclick="toggleNav()">Home</a></li>
+
+        <li><a href="../../" onclick="toggleNav()">ホーム</a></li>
       </ul>
     </nav>
-  
+
     </nav>
   </div>
- 
+
 
 
 
   <!--Content-->
-  <section class="c-section"> 
+  <section class="c-section">
   <div class="container mx-auto max-w-6xl px-6">
    <img class="img-fluid rounded-2xl" src="../../images/archive_01.webp" alt="New Context Conference Archive">
     </div>
     <div class="container mx-auto max-w-6xl px-6">
       <div class="c-project">
         <div class="c-project-title mb-10 mb-10">
-          <h1>New Context Conference</h1>
-          <p class="c-project-role">UI/UX Design & WordPress Architecture</p>
-       
-           <p>New Context Conference, NCC is a conference organized by DG Garage. It is hosted in Tokyo and San Francisco annually. For this project, I led the UI/UX design and developed a custom WordPress system to support multi-year event publishing and structured content presentation.</p>
-      
+          <h1>New Context Conference Archive</h1>
+          <p class="c-project-role mb-10">UXアーキテクチャ、データ移行 & WordPress構築</p>
+
+          <ul class="c-tags mb-5">
+            <li>UXアーキテクチャ</li>
+            <li>WordPress / ACF</li>
+            <li>データ移行</li>
+            <li>バイリンガル</li>
+          </ul>
+
+          <p>New Context Conferenceは2005年から開催されています。2024年時点で東京とサンフランシスコにまたがる20以上のイベントがあり、すべてが独立したサイトに散らばり、履歴を閲覧できる場所がありませんでした。NCCアーカイブサイトをゼロから設計・構築しました：20年間のカンファレンス全履歴のための永続的なホーム、そして今後のイベントへの入口となるホームページ。</p>
+
           </div>
           <a href="https://ncc.garage.co.jp/" target="_blank" class="c-project__link flex gap-2 items-center">
-           View Site <img class="img-fluid h-5 aspect-square w-auto" src="../../images/arrow.svg" alt="">
+           サイトを見る <img class="img-fluid h-5 aspect-square w-auto" src="../../images/arrow.svg" alt="">
           </a>
-    
-          <div class="c-project-section">
-            <h2>Scope</h2>
-            <ul class="c-list">
-            	<li>Information architecture</li>
-              <li>UI design</li>
-              <li>Custom WordPress theme development</li>
-              <li>CMS structure (Custom Post Types & relational content)</li>
-              <li>Front-end implementation (HTML / CSS / JS)</li>
-              <li>Performance optimization</li>
-            </ul>
+
+          <!-- 01 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>01</span>
+              <h2>背景</h2>
+            </div>
+            <div class="c-project-body">
+              <p>New Context Conferenceは2005年から開催されています。東京とサンフランシスコにまたがる20以上のイベントがありながら、それぞれが独立したサイトを持ち——中央のホームもなく、閲覧できる履歴もなく、年をまたいでスピーカーを検索する方法もありませんでした。初回エディションまでさかのぼるイベントデータは、散らばった古いサーバーファイルとWayback Machineのスナップショットにしか存在していませんでした。このNCCアーカイブを一から設計・構築することで解決しました：カンファレンスの全履歴を収めたバイリンガルの永続的なホーム、そして将来のすべてのイベントをリビルドなしに運用できるインフラ。</p>
+            </div>
           </div>
 
-<div class="c-project-section">
-  <h2>Challenges</h2>
-  <ul class="c-list">
-	<li>Structuring complex speaker and session data clearly</li>
-	<li>Preserving readability across content-dense pages</li>
-	<li>Supporting multiple editions without duplicating structure</li>
-	<li>Enabling internal teams to manage content independently</li>
-  </ul>
-</div>
+          <!-- 02 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>02</span>
+              <h2>方向性</h2>
+            </div>
+            <div class="c-project-body">
+              <p>NCCの各イベントは独自の強いビジュアルアイデンティティを持ちます——それぞれに異なるカラーパレット、イメージ、テーマがあります。アーカイブサイトはそれらすべてを収めながら、どれとも競合しない必要がありました。解決策は抑制でした：クリーンなホワイト、ニュートラルなタイポグラフィ、最小限の色。サイトの仕事は、イベントを明確に提示すること——それ自体の個性を主張しないこと。</p>
+              <p class="mt-5">アーカイブページは設計上、ビジュアルタイムラインになります——各イベントカードがそれぞれのキービジュアルをサムネイルとして使用し、20年分のNCCのアイデンティティがグリッドとして現れます。サイトは一歩引き、歴史に語らせます。</p>
+            </div>
+          </div>
 
-<div class="c-project-section">
-  <h2>Approach</h2>
-  <ul class="c-list">
-    <li>Designed a modular layout system for consistent presentation</li>
-    <li>Built structured Custom Post Types for speakers, sessions, and events</li>
-    <li>Developed reusable templates to reduce redundancy</li>
-    <li>Optimized performance and ensured cross-device stability</li>
-  </ul>
-</div>
+          <!-- 03 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>03</span>
+              <h2>主な判断</h2>
+            </div>
+            <div class="c-project-body">
+              <p>エディトリアルシステムとその基盤にあるインフラの両方を形づくった6つの判断があります。</p>
 
-<div class="c-project-section">
-  <h2>Results</h2>
-  <p>The platform now supports multiple NCC editions within a single scalable structure.
-    Content can be updated and published internally without developer involvement.
-    Speaker and session information is presented clearly despite high content density.
-    The site maintains stable performance across devices, including mobile-heavy traffic.</p>
-</div>
+              <p class="mb-10 mt-5"><span class="text-lg c-label">01. ダイナミックホームページ</span>
+              ホームページは2つの状態を持ちます。イベントが近づいているとき、カウントダウンタイマーとイベントサイトへのリンクを表示します——アーカイブが発射台になります。アクティブなイベントがないとき、最新のイベントとアーカイブへのリンクを表示します。どちらの状態もWordPressダッシュボードから完全にコントロールできます。コードベースに触れることなく、ホームページは常に最新状態を保ちます。</p>
+
+              <p class="mb-10"><span class="text-lg c-label">02. 20年分の歴史を復元する</span>
+              2005年までさかのぼるイベントデータは、整理された形では存在していませんでした。古いサーバーファイルとWayback Machineからスピーカー名、アジェンダ、テーマ、写真をスクレイピングし、すべてを構造化してCMSに移行しました。初回NCCから現在まで、すべてのイベントが一貫したフォーマットで検索・閲覧できるようになりました。</p>
+
+              <p class="mb-10"><span class="text-lg c-label">03. スピーカーをカスタム投稿タイプとして</span>
+              スピーカーは独自の投稿タイプを持ち、特定のイベントから独立しています。複数回出演したスピーカーは一つのプロフィールを持ち、参加したすべてのエディションにリンクしています。ダッシュボードから20年分のカンファレンス全体のスピーカー履歴を検索できるようになりました——以前は不可能だったことです。</p>
+
+              <p class="mb-10"><span class="text-lg c-label">04. アジェンダをリピートロウとして</span>
+              アジェンダビルダーはACFのリピートロウフィールドを使用します——時間、セッションタイトル、説明、スピーカー。コードに触れることなく、ダッシュボードから完全なイベントアジェンダを作成できます。セッションの追加はロウを追加するだけです。</p>
+
+              <p class="mb-10"><span class="text-lg c-label">05. ギャラリーをドラッグ＆ドロップで</span>
+              イベント写真はダッシュボードのドラッグ＆ドロップでアップロードできます。画像を入れて保存するだけ。ファイル管理もカスタムマークアップも不要です。</p>
+
+              <p><span class="text-lg c-label">06. イベントページのカスタムブロック</span>
+              アーカイブ済みの各イベントページ——アジェンダ、ギャラリー、スピーカー——はカスタムACFブロックで構築されています。構造はすべてのイベントで一貫していますが、コンテンツは各イベント固有です。新しいイベントページをすべてダッシュボードから作成・公開できます。</p>
+            </div>
+          </div>
+
+          <!-- 04 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>04</span>
+              <h2>デザイン</h2>
+            </div>
+            <div class="c-project-body">
+              <p>ビジュアルシステムは意図的にシンプルです——ホワイトの背景、単一のニュートラルなフォント、控えめなスペーシング。アーカイブページは各イベントのキービジュアルをカードのサムネイルとして使い、NCCの20年間のビジュアル履歴のタイムラインにページを変えます。デザインは完全に一歩引き、コンテンツがそれを支えます。</p>
+              <p class="mt-5">ホームページは同じレイアウトの中で——ライブイベントのエネルギーと共にカウントダウンとCTA、アクティブなイベントがないときの静かなアーカイブとしての存在——という2つの全く異なる状態を管理し、状態間の移行が唐突ではなく自然に感じられます。</p>
+            </div>
+          </div>
+
+          <!-- 05 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>05</span>
+              <h2>開発</h2>
+            </div>
+            <div class="c-project-body">
+              <p>DG Incubationと同じ基盤の上にACFを使ったカスタムWordPressテーマを構築——カスタム投稿タイプ、構造化フィールドグループ、Polylangによるバイリンガル対応（JP/EN）。スピーカー投稿タイプは独自のタクソノミーを持ち、プロフィールを年をまたいだイベントにリンクします。アジェンダとギャラリーはカスタムACFブロックで構築され、イベントページをCMS管理しやすい構造にしています。データ移行はWayback Machineのスナップショットと古いサーバーファイルの手動入力と半自動パースを組み合わせて行いました。</p>
+            </div>
+          </div>
+
+          <!-- 06 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>06</span>
+              <h2>成果</h2>
+            </div>
+            <div class="c-project-body">
+              <p>20年分のNCCの歴史が一か所に集まり、日英両語で検索・閲覧できるようになりました。編集チームはデザインや開発の関与なしに、完全なイベントアーカイブページ——アジェンダ、スピーカー、ギャラリー——を作成・公開できます。ホームページはイベントが近いか過ぎたかを自動的に反映します。このインフラは今後のすべてのNCCイベントをリビルドなしに運用できます。</p>
+            </div>
+          </div>
+
+          <!-- 07 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>07</span>
+              <h2>振り返り</h2>
+            </div>
+            <div class="c-project-body">
+              <p>データ復元プロセスが最も時間のかかる部分であり、大幅に過小評価していました。Wayback Machineのスナップショットは一貫性がなく——ほぼ何も復元できなかったイベントもあれば、ほぼ完全なものもありました。スコープを確定する前に、実際に何が存在するかを適切に調査することで、プロセスをよりスムーズにできたはずです。将来のアーカイブプロジェクトでは、ビルド作業を始める前にディスカバリーフェーズを独立した成果物として扱うつもりです。</p>
+            </div>
+          </div>
 
 </div>
 
 <img class="img-fluid rounded-2xl" src="../../images/archive_02.webp" alt="New Context Conference Archive">
 <img class="img-fluid rounded-2xl md:mt-30 mt-10" src="../../images/archive_03.webp" alt="New Context Conference Archive">
 <img class="img-fluid rounded-2xl md:mt-30 mt-10" src="../../images/archive_04.webp" alt="New Context Conference Archive">
-    
+
 <div>
 
 <div class="flex justify-between mt-10 md:mt-30">
        <a href="/rct/works/nccsummer/" class="c-project__link -previous flex gap-2 items-center">
-        <img class="img-fluid h-5 aspect-square w-auto" src="../../images/arrow.svg" alt=""> Previous 
+        <img class="img-fluid h-5 aspect-square w-auto" src="../../images/arrow.svg" alt=""> 前へ
           </a>
-          <a href="/rct/works/ncf/" class="c-project__link flex gap-2 items-center">Next <img class="img-fluid h-5 aspect-square w-auto" src="../../images/arrow.svg" alt="">
+          <a href="/rct/works/ncf/" class="c-project__link flex gap-2 items-center">次へ <img class="img-fluid h-5 aspect-square w-auto" src="../../images/arrow.svg" alt="">
            </a>
    </div>
 
@@ -143,7 +208,7 @@
   </footer>
 
 
- <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script> 
+ <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script>
  <script src="../../scripts.js"></script>
 
 </body>

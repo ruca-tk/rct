@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -33,99 +33,176 @@
     <nav class="flex items-center justify-between">
       <a class="c-brand" href="../../">Rc.</a>
       <ul class="hidden md:flex gap-8">
-       
-        <li><a href="../../">Home</a></li>
+
+        <li><a href="../../">ホーム</a></li>
+        <li class="lang-switcher"><a href="/en/">EN</a></li>
       </ul>
-  
-    <button id="hamburger" aria-label="Open navigation" class="md:hidden flex flex-col justify-center w-8 h-8 relative z-50">
+
+    <button id="hamburger" aria-label="ナビゲーションを開く" class="md:hidden flex flex-col justify-center w-8 h-8 relative z-50">
       <span class="block w-8 bg-[var(--bg)] rounded-sm mb-2 transition-transform duration-300"></span>
       <span class="block w-8 bg-[var(--bg)] rounded-sm mb-2 transition-all duration-300"></span>
       <span class="block w-8 bg-[var(--bg)] rounded-sm transition-transform duration-300"></span>
     </button>
-   
+
     <nav id="mobileNav" class="mobile-nav">
       <ul>
-     
-        <li><a href="../../" onclick="toggleNav()">Home</a></li>
+
+        <li><a href="../../" onclick="toggleNav()">ホーム</a></li>
       </ul>
     </nav>
-  
+
     </nav>
   </div>
- 
+
 
 
 
   <!--Content-->
-  <section class="c-section"> 
+  <section class="c-section">
   <div class="container mx-auto max-w-6xl px-6">
    <img class="img-fluid rounded-2xl" src="../../images/wallet_01.webp" alt="mahola wallet">
     </div>
     <div class="container mx-auto max-w-6xl px-6">
-      <div class="c-project">
+       <div class="c-project ">
         <div class="c-project-title mb-10">
           <h1>mahola wallet</h1>
-          <p class="c-project-role mb-10">Product Design</p>
-       
-           <p>mahola wallet is an internal NFT collection application designed to manage and interact with digital assets. I led the product design from the ground up, defining the visual identity, user flows, feature set, and interaction system beyond the original brief.</p>
-      
+          <p class="c-project-role mb-10">プロダクトデザイン</p>
+
+           <ul class="c-tags mb-5">
+        <li>プロダクトデザイン</li>
+        <li>Web3 / NFT</li>
+        <li>デザインシステム</li>
+        <li>Figma → ハンドオフ</li>
+        </ul>
+
+           <p>mahola walletは、デジタルアセットを管理・操作するための社内向けNFTコレクションアプリです。ビジュアルアイデンティティ、ユーザーフロー、機能セット、インタラクションシステムまで、プロダクトデザイン全体をゼロからリードしました。</p>
+
           </div>
-        
-    
-<div class="c-project-section">
-  <h2>Scope</h2>
-  <ul class="c-list">
-      <li>Product UI/UX design</li>
-    <li>User flow architecture</li>
-    <li>Feature definition & expansion</li>
-    <li>Gamification mechanics</li>
-    <li>Account system design</li>
-    <li>Interaction and feedback states</li>
-  </ul>
-</div>
+          <!-- 01 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>01</span>
+              <h2>背景</h2>
+            </div>
+            <div class="c-project-body">
+            <p>Digital GarageはNFTを活用したコミュニティツールの検討を行っており、社内でのNFTリテラシー向上を目指していました。初期プロトタイプにはミント機能があるものの、一貫したユーザー体験がなく——アセットの管理、パスワードリセット、言語切り替えもできない状態でした。最初のミント後にエンゲージメントが落ちていました。</p>
+            </div>
+          </div>
 
-<div class="c-project-section">
-  <h2>Challenges</h2>
-  <ul class="c-list">
-    <li>Designing an intuitive NFT management interface for non-technical users</li>
-    <li>Introducing structure where functional requirements were incomplete</li>
-    <li>Balancing gamification with usability</li>
-  </ul>
-</div>
+           <!-- 02 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>02</span>
+              <h2>調査</h2>
+            </div>
+            <div class="c-project-body">
+              <img class="img-fluid" src="../../images/wallet_case_1.webp" alt="">
+            <p class="mt-5 mb-5">これが出発点——エンジニアが作成したワイヤーフレームで、どの画面が存在するかは定義されていますが、実際のUXは未定義のまま。ナビゲーションモデル、アクション階層、空状態、エラーフローはすべて未定義でした。それらの判断を行うことが私の仕事でした。</p>
 
-<div class="c-project-section">
-  <h2>Approach</h2>
-  <ul class="c-list">
-    <li>Defined core product flows: onboarding, collection, item detail, and account management</li>
-    <li>Added missing essential functions including password reset, account deletion, and language switching</li>
-    <li>Introduced gamified elements such as status levels and achievement feedback</li>
-    <li>Designed clear interaction states for acquisition, usage, and history tracking</li>
-    <li>Built a cohesive dark UI system aligned with the Web3 positioning</li>
-    <li>Structured components and documented interaction states to ensure seamless handoff to web app developers</li>
-  </ul>
-</div>
+             <img class="img-fluid" src="../../images/wallet_case_2.webp" alt="">
+             <p class="mt-5 mb-5">日本市場で最も近い競合プロダクトは、mahola がローンチした頃にはすでにサービスを終了していました。そのUIを見て、核心的な問題が明確になりました：ゲーミフィケーション（ポイント、マップ）を前面に出しながら、実際のアセットであるNFT自体を埋もれさせていたのです。ユーザーには「スタンプを持っている」から「それが何の価値を持ち、どう使えるか」への明確な導線がありませんでした。この観察が、mahola のダッシュボードをポイントシステムではなくアセットコレクションで始める判断につながりました。</p>
 
-<div class="c-project-section">
-  <h2>Results</h2>
-  <p>The product evolved from a basic NFT viewer into a structured wallet experience with defined account management and engagement mechanics.
-    Gamification increased clarity around progression and collection status.
-    Critical user flows were formalized and standardized, improving usability and completeness. The interface established a consistent visual identity aligned with the broader mahola ecosystem.</p>
-</div>
+            </div>
+          </div>
 
-</div>
+           <!-- 03 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>03</span>
+              <h2>主な判断</h2>
+            </div>
+            <div class="c-project-body">
 
-<img class="img-fluid rounded-2xl" src="../../images/wallet_02.webp" alt="New Context Festival 2026">
-<img class="img-fluid rounded-2xl md:mt-30 mt-10" src="../../images/wallet_03.webp" alt="New Context Festival 2026">
-<img class="img-fluid rounded-2xl md:mt-30 mt-10" src="../../images/wallet_04.webp" alt="New Context Festival 2026">
-    
+            <p class="mb-10"> <span class="text-lg c-label ">01. カラム数</span>
+            エンジニアのデフォルトは3カラムグリッドで、スペースの効率的な使い方でより多くのアイテムが一度に見えます。それに異議を唱えました。このコンテキストでのNFTは管理するファイルではなく、思い出の品です。3列では作品がサムネイルになってしまう。2列なら実際に鑑賞できるものになります。レイアウトは、画面に何個収まるかではなく、ユーザーがコレクションに対してどう感じるかを反映する必要がありました。</p>
+
+        <p><span class="text-lg c-label">02. ゲーミフィケーション</span>
+        ブリーフはmaholaの遊び心あるブランドキャラクターを反映した楽しい体験を求めていました。「楽しさ」をビジュアルスタイルだけで解釈するのではなく、マスコットを中心にしたプログレッションシステムを提案しました。クマはすでにステッカーアセットのシリーズとして存在していました。それらをNFT獲得数に連動したランクシステムに結びつけました：Newbie、Novice、Pro、Wizardの4段階で、それぞれがクマのビジュアル状態として表現されます。Wizardはスター目になります。ゲーミフィケーションはブランドの上に乗せたものではなく、ブランドを通じて表現されたものです。さらに、ランク構造はリデザインなしに将来のティア別特典の基盤にもなりました。</p>
+          <img class="img-fluid mt-5 mb-10" src="../../images/wallet_case_3.webp" alt="">
+
+            <p><span class="text-lg c-label">03. お気に入り</span>
+           お気に入りタグはブリーフに含まれていませんでした。自分自身がコレクターとして追加しました。コレクションが増えていく中で、最も大切なアイテムを見つけるのにすべてをスクロールする必要があってはなりません。あるNFTはトロフィーであり、あるものはユーティリティです——重要なものへの素早いアクセスが必要です。</p>
+
+            </div>
+          </div>
+
+            <!-- 04 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>04</span>
+              <h2>デザイン</h2>
+            </div>
+            <div class="c-project-body">
+
+            <p class="mt-5 mb-5">ビジュアル方針はNFTのアートワーク自体から導きました。作品は鮮やかで色彩豊か、ディテールが細かい——ライトなUIだと競合してしまいます。ダークモードにすることでアートワークを主役にし、ネオンイエローを単一のアクセントカラーとしてmaholaのエネルギッシュなブランドキャラクターをインターフェース全体に通しました。</p>
+               <img class="img-fluid" src="../../images/wallet_01.webp" alt="">
+
+
+            <p class="mt-5 mb-5">3つのタブ、それぞれ一つの役割。ホームはコレクションの活動を一目で把握でき、コレクションはNFTを前面に出し、アカウントはその他すべてを管理します。2カラムグリッドは各作品をデータポイントではなくアートワークとして存在させる余白を与えます。</p>
+              <img class="img-fluid" src="../../images/wallet_04.webp" alt="">
+
+
+            <p class="mt-5 mb-5">ランクプログレッションシステムは初回ログイン時とランク変更時にモーダルとして表示されます。クマがメッセージそのもの——長い説明は不要です。ユーザーはレベルアップしたことを即座に理解します。</p>
+            <img class="img-fluid" src="../../images/wallet_03.webp" alt="">
+
+            <p class="mt-5 mb-5">元のワイヤーフレームは3つの画面を定義していました。最終プロダクトは全体の表面積をカバーしています——空状態、エラーフロー、パスワードリセット、アカウント削除、言語切り替え、確認フロー。コレクションの空状態には汎用的なプレースホルダーではなく、困ったクマを使用し、まだ何もない状態でもブランドの声を一貫させました。</p>
+                <img class="img-fluid" src="../../images/wallet_02.webp" alt="">
+
+            </div>
+          </div>
+
+           <!-- 05 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>05</span>
+              <h2>開発連携</h2>
+            </div>
+            <div class="c-project-body">
+
+            <p>エンジニアとして受け取りたい形にFigmaファイルを整えました。スペーシングとタイポグラフィはTailwindのスケールに合わせており、デザイントークンが推測なしにコードに直接変換できます。各コンポーネントには状態を定義しました——デフォルト、アクティブ、エラー、無効。ボタントランジションとスプラッシュアニメーションはコメントや口頭説明ではなく、コンポーネントライブラリ内に記録されています。Figmaファイルとビルドのギャップをできるかぎり小さくすることが目標でした。</p>
+             <img class="img-fluid mt-5 mb-5" src="../../images/wallet_case_5.webp" alt="">
+                <img class="img-fluid" src="../../images/wallet_case_4.webp" alt="">
+
+            </div>
+          </div>
+
+           <!-- 06 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>06</span>
+              <h2>成果</h2>
+            </div>
+            <div class="c-project-body">
+
+            <p>アプリは社内で約320名に利用されています。カフェがこのプラットフォームを通じた月次NFTキャンペーンを実施しており、ブランドがコミュニティと関わる定期的な仕組みになりました。プロダクトは一貫したユーザー体験のない未完成のプロトタイプから、毎月開いてもらえるものへと変わりました。それがゴールでした。</p>
+             <img class="img-fluid mt-5 mb-5" src="../../images/wallet_case_5.webp" alt="">
+
+
+            </div>
+          </div>
+
+            <!-- 07 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>07</span>
+              <h2>振り返り</h2>
+            </div>
+            <div class="c-project-body">
+
+            <p>渡されたワイヤーフレームをそのままスコープとして信じて、すぐにデザインを始めてしまいました。実際にはそうではありませんでした。パスワードリセット、アカウント削除、言語切り替え、エラー状態——足りない機能がデザインフェーズで一つずつ表面化しました。そのたびに、すでに確定したと思っていたフローを見直す必要がありました。次回はFigmaに触れる前に、より大まかでも完全な機能マップを求めます。ホワイトボードのスケッチでも、コンポーネントライブラリよりも早く抜け穴を発見できます。</p>
+            </div>
+          </div>
+
+      </div>
+    </div>
 <div>
 
 <div class="flex justify-end  mt-10 md:mt-30">
        <a href="/rct/works/mahola/" class="c-project__link flex gap-2 items-center">
-        Next <img class="img-fluid h-5 aspect-square w-auto" src="../../images/arrow.svg" alt="">  
+        次へ <img class="img-fluid h-5 aspect-square w-auto" src="../../images/arrow.svg" alt="">
           </a>
-          
-         
+
+
    </div>
 
   </section>
@@ -141,7 +218,7 @@
   </footer>
 
 
- <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script> 
+ <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script>
  <script src="../../scripts.js"></script>
 
 </body>

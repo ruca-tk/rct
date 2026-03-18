@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="googlebot" content="noindex, nofollow, noarchive">
+<meta name="bingbot" content="noindex, nofollow, noarchive">
+<link rel="icon" type="image/png" href="../../../favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="../../../favicon.svg" />
+<link rel="shortcut icon" href="../../../favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="../../../apple-touch-icon.png" />
+<link rel="manifest" href="../../../site.webmanifest" />
+  <link rel="stylesheet" href="../../../style.css">
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.17/dist/lenis.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Rc Portfolio - Hashiri San Francisco</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.168.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.168.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <div class="c-nav mx-auto md:max-w-5xl w-full w-full px-6">
+    <nav class="flex items-center justify-between">
+      <a class="c-brand" href="/rct/en/">Rc.</a>
+      <ul class="hidden md:flex gap-8">
+       
+         <li><a href="/rct/en/">Home</a></li>
+         <li class="lang-switcher"><a href="/rct/">JA</a></li>
+      </ul>
+  
+    <button id="hamburger" aria-label="Open navigation" class="md:hidden flex flex-col justify-center w-8 h-8 relative z-50">
+      <span class="block w-8 bg-[var(--bg)] rounded-sm mb-2 transition-transform duration-300"></span>
+      <span class="block w-8 bg-[var(--bg)] rounded-sm mb-2 transition-all duration-300"></span>
+      <span class="block w-8 bg-[var(--bg)] rounded-sm transition-transform duration-300"></span>
+    </button>
+   
+    <nav id="mobileNav" class="mobile-nav">
+      <ul>
+     
+        <li><a href="/rct/en/" onclick="toggleNav()">Home</a></li>
+      </ul>
+    </nav>
+  
+    </nav>
+  </div>
+ 
+
+
+
+  <!--Content-->
+  <section class="c-section"> 
+  <div class="container mx-auto max-w-6xl px-6">
+   <img class="img-fluid rounded-2xl" src="../../../images/hashiri_01.webp" alt="New Context Festival 2026">
+    </div>
+    <div class="container mx-auto max-w-6xl px-6">
+      <div class="c-project">
+        <div class="c-project-title mb-10">
+          <h1>Hashiri San Francisco</h1>
+          <p class="c-project-role mb-10">Site Renewal — Art Direction & Frontend Development</p>
+
+          <ul class="c-tags mb-5">
+            <li>Site Renewal</li>
+            <li>Art Direction</li>
+            <li>Front-End Dev</li>
+            <li>Content Strategy</li>
+          </ul>
+
+          <p>Hashiri is a Michelin-starred omakase restaurant in San Francisco, owned by the CEO of Digital Garage. The existing site was a scroll-jacked single page — text-heavy, image-light, and carrying content that served the owner’s personal interests rather than a customer’s decision to book a table. I was given full creative freedom to renew it.</p>
+
+          </div>
+          <a href="https://hashirisf.com/" target="_blank" class="c-project__link flex gap-2 items-center">
+           View Site <img class="img-fluid h-5 aspect-square w-auto" src="../../../images/arrow.svg" alt="">
+          </a>
+
+          <!-- 01 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>01</span>
+              <h2>Context</h2>
+            </div>
+            <div class="c-project-body">
+              <p>Hashiri is a Michelin-starred omakase restaurant in San Francisco, owned by the CEO of Digital Garage. The existing site was a single long-page build with scroll jacking — heavy on text, light on imagery, and carrying content that served the owner’s personal interests rather than a customer’s decision to book a table. The brief was a renewal: make it modern, make it clean, and make it feel worthy of a Michelin-starred experience. I was given full creative freedom — trust built over eight years of consistent work.</p>
+            </div>
+          </div>
+
+          <!-- 02 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>02</span>
+              <h2>Direction</h2>
+            </div>
+            <div class="c-project-body">
+              <p>Hashiri’s name refers to the start of a season for ingredients — the moment just before peak, when something is at its most anticipated. That gave me a clear editorial line: the site should feel like the food. Restrained, precise, and led by what’s on the plate.</p>
+              <p class="mt-5">The colour palette draws from traditional Japanese colours — deep muted tones that feel considered rather than decorative. Full-screen photography carries the content. Everything else gets out of the way. I split the original single long page into separate pages, then restructured the restaurant’s concept copy — which had arrived as a dense block of text — into five clear categories: About, Commitment, Eat, Drink, and Feel. Each section has a single job.</p>
+            </div>
+          </div>
+
+          <!-- 03 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>03</span>
+              <h2>Key Decisions</h2>
+            </div>
+            <div class="c-project-body">
+              <p>Four decisions defined the renewal beyond the visual refresh.</p>
+
+              <p class="mb-10 mt-5"><span class="text-lg c-label">01. Bottom Navigation</span>
+              Most restaurant sites put navigation at the top. I moved it to the bottom and made it scroll-aware — it disappears when the user scrolls down and reappears when they scroll up. The reasoning was simple: the photography is the product. A fixed bar sitting across the top of a full-screen food image competes with the thing the site is trying to sell. The bottom nav keeps wayfinding available without interrupting the visual experience.</p>
+
+              <p class="mb-10"><span class="text-lg c-label">02. Cutting the Art Content</span>
+              The existing site had descriptions of artwork displayed in the restaurant. The CEO is a collector and it reflected a personal interest. I removed it. A customer deciding whether to spend several hundred dollars on an omakase dinner is looking for one thing — confidence that the food and experience will be worth it. Art collection notes don’t answer that question. Removing them made space for content that does.</p>
+
+              <p class="mb-10"><span class="text-lg c-label">03. Instagram Embed</span>
+              A Michelin-starred restaurant lives and dies by its visual reputation. The Instagram feed brings the most current food photography onto the site without requiring anyone to update it manually. It keeps the site feeling alive between redesigns and gives customers a live window into what’s on the menu right now.</p>
+
+              <p><span class="text-lg c-label">04. Art Direction</span>
+              The photography on the old site undersold the food. I found reference images that captured the tone I was after — close crops, dramatic lighting, ingredients as the subject — and briefed the US-based photographer remotely to match. The photography brief came before the layout, not after.</p>
+            </div>
+          </div>
+
+          <!-- 04 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>04</span>
+              <h2>Design</h2>
+            </div>
+            <div class="c-project-body">
+              <p>The hero leads with the logo and a full-screen image slider — no text competing with the food. The Japanese wordmark sits quietly, the photography does the work. Traditional Japanese colour values run through the typography and UI details: warm off-whites, deep charcoal, muted earth tones. Nothing bright, nothing that pulls attention away from the imagery.</p>
+              <p class="mt-5">The hero copy — "it all begins with the ingredients" — is a direct reference to the restaurant’s name. Hashiri is the term for the first catch or first harvest of a season: the moment an ingredient is at its most anticipated. The line earns its place.</p>
+            </div>
+          </div>
+
+          <!-- 05 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>05</span>
+              <h2>Build</h2>
+            </div>
+            <div class="c-project-body">
+              <p>Built with Vite and Tailwind CSS, with GSAP handling animations and Lenis for smooth scroll. Vanilla JS throughout — no framework overhead for a site that doesn’t need it. The scroll-aware bottom navigation uses scroll direction detection on the window, toggling visibility with a GSAP fade. The Instagram feed runs through Elfsight, keeping the implementation clean and maintenance-free on the client side.</p>
+            </div>
+          </div>
+
+          <!-- 06 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>06</span>
+              <h2>Outcome</h2>
+            </div>
+            <div class="c-project-body">
+              <p>The site is live and serves as the primary web presence for a restaurant that has held Michelin recognition across three consecutive years. The photography-led approach and stripped-back content give it a presence that matches the quality of the experience inside.</p>
+            </div>
+          </div>
+
+          <!-- 07 -->
+          <div class="c-project-section -numbered">
+            <div class="-numbered__title">
+              <span>07</span>
+              <h2>Reflection</h2>
+            </div>
+            <div class="c-project-body">
+              <p>I’d have pushed to build out the Menu page more fully. It currently exists as a page but the content is thin — for a restaurant at this level, the menu is a major conversion moment. A customer on the fence about booking would be persuaded by seeing the detail and care that goes into each course. That page deserved more attention than it got.</p>
+            </div>
+          </div>
+
+</div>
+
+<img class="img-fluid rounded-2xl" src="../../../images/hashiri_02.webp" alt="Hashiri San Francisco">
+<img class="img-fluid rounded-2xl md:mt-30 mt-10" src="../../../images/hashiri_03.webp" alt="Hashiri San Francisco">
+
+    
+<div>
+
+<div class="flex justify-between mt-10 md:mt-30">
+       <a href="/rct/works/mahola/" class="c-project__link -previous flex gap-2 items-center">
+        <img class="img-fluid h-5 aspect-square w-auto" src="../../../images/arrow.svg" alt=""> Previous 
+          </a>
+          <a href="/rct/works/dgi/" class="c-project__link flex gap-2 items-center">Next <img class="img-fluid h-5 aspect-square w-auto" src="../../../images/arrow.svg" alt="">
+           </a>
+   </div>
+
+  </section>
+
+
+
+
+ <!-- footer-->
+  <footer class="c-footer">
+  <section class="c-section__footer">
+<img class="img-fluid  w-auto" src="../../../images/footer.webp" alt="Rc. Portfolio">
+  </section>
+  </footer>
+
+
+ <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script> 
+ <script src="../../../scripts.js"></script>
+
+</body>
+</html>
