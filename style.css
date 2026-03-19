@@ -523,7 +523,8 @@ overflow: hidden;
       overflow: visible;
       object-fit: cover;
      height: 24vh;
-     width: auto;
+     width: 100%;
+   transform: scale(1.05);
      display: block;
       @media (max-width: 768px) {
       
