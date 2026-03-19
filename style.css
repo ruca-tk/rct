@@ -226,7 +226,7 @@ body {
     }
     p {
         text-align: center;
-        font-size: var(--text-2xl);
+        font-size: var(--text-3xl);
         pointer-events: none;
         @media (max-width: 768px) {
             font-size: var(--text-xl);
@@ -341,10 +341,11 @@ body {
 .c-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+     gap: var(--space-lg);
     @media (max-width: 768px) {
         grid-template-columns: repeat(1, 1fr);
     }
-    gap: var(--space-xl);
+   
     .c-card {
         display: flex;
         flex-direction: column;
