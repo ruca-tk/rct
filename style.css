@@ -256,6 +256,9 @@ body {
     height: 100%;
 }
 /* Works */
+.c-works__item__teaser {
+  margin-top: var(--space-lg);
+}
  .c-tags {
         display: flex;
         flex-wrap: wrap;
@@ -514,18 +517,20 @@ body {
   .c-footer {
 width: 100vw;
 overflow: hidden;
+   margin-bottom: var(--space-6xl);
     img {
       overflow: visible;
       object-fit: cover;
      height: 24vh;
      width: auto;
      display: block;
-    }
-     @media (max-width: 768px) {
+      @media (max-width: 768px) {
       
      transform: scale(1.05);
-     margin-bottom: var(--space-6xl);
+  
     }
+    }
+    
    
   }
 
